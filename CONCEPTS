@@ -1,0 +1,71 @@
+############################################################################
+
+Note: When adding a new keyword, this also needs to be added to datsearch.r
+and datsearch.Rd!
+
+############################################################################
+
+biogeochemical tags:
+
+\concept{bulk elements}
+\concept{isotopic ratios}
+
+
+############################################################################
+
+biomineral archives/structures:
+
+\concept{otolith}
+\concept{scale}
+\concept{eye lenses}
+\concept{vertebra}
+
+############################################################################
+
+microchemical/isotopic elements:
+
+\concept{d34S}
+\concept{d13C}
+\concept{d15N}
+\concept{d18O}
+\concept{Sr8786}
+\concept{Sr/Ca}
+
+
+############################################################################
+
+FAO major fishing areas:
+
+#Inland fishery areas
+
+\concept{Africa}
+\concept{North America}
+\concept{South America}
+\concept{Asia}
+\concept{Europe}
+\concept{Oceania}
+\concept{Antarctica}
+
+
+#Marine fishery areas
+\concept{Arctic sea}
+\concept{Northwest Atlantic}
+\concept{Northeast Atlantic}
+\concept{Western Central Atlantic}
+\concept{Eastern Central Atlantic}
+\concept{Mediterranean and Black sea}
+\concept{Southwest Atlantic}
+\concept{Southeast Atlantic}
+\concept{Antarctic Atlantic}
+\concept{Western Indian Ocean}
+\concept{Eastern Indian Ocean}
+\concept{Antarctic Indian Ocean}
+\concept{Northwest Pacific}
+\concept{Northeast Pacific}
+\concept{Western Central Pacific}
+\concept{Eastern Central Pacific}
+\concept{Southwestern Pacific}
+\concept{Southeastern Pacific}
+\concept{Antarctic Pacific}
+
+############################################################################

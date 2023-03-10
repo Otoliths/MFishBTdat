@@ -1,0 +1,22 @@
+Package: MFishBTdat
+Date: 2023-03-09
+Title: Biomineral Archives Datasets of Migratory Fish
+Version: 0.1.0
+Authors@R: c(
+  person(given = "Liuyong", family="Ding",
+  role=c("aut","cre"), email = "ly_ding@126.com"),
+  person(given = "Chengzhi", family="Ding",
+  role="aut", email = "chzhding@ynu.edu.cn"),
+  person(given = "Juan", family="Tao",
+  role="aut", email = "tao.juanat@gmail.com"),
+  person(given = "Bangli", family="Tang",
+  role="dtc", email = "tangbangli9@gmail.com"))
+Maintainer: Liuyong Ding <ly_ding@126.com>
+Description: A collection of biomineral archives datasets of migratory fish with important applications to biogeochemistry and ecosystem science.
+Depends: R (>= 4.0.0)
+Imports: utils, tools, mathjaxr
+Suggests: testthat,digest, ggplot2,S2miner
+License: GPL (>=2)
+Encoding: UTF-8
+LazyData: true
+ByteCompile: TRUE
