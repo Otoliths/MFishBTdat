@@ -18,8 +18,8 @@ bt.belltilcock.2021a
 \bold{C_ug}     \tab \code{numeric} \tab concentration of carbon, micrograms \cr
 \bold{N_ug}     \tab \code{numeric} \tab concentration of nitrogen, micrograms \cr
 \bold{S_ug}     \tab \code{numeric} \tab concentration of sulfur, micrograms \cr
-\bold{C:N}     \tab \code{numeric} \tab this is the carbon to nitrogen ratio, no units \cr
-\bold{C:N}     \tab \code{predicted_dm} \tab this the predicted diameter of this fish's eye lense created from a model \cr
+\bold{C.N}     \tab \code{numeric} \tab this is the carbon to nitrogen ratio, no units \cr
+\bold{predicted_dm}     \tab \code{numeric} \tab this the predicted diameter of this fish's eye lense created from a model \cr
 \bold{life_history}    \tab \code{character}   \tab  life history stage
 }
 }

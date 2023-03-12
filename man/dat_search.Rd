@@ -25,7 +25,7 @@ dat_search(pattern, concept = TRUE, matchall = TRUE, fixed = TRUE, pkgdown = FAL
 
    \bold{Concept Terms}
 
-   Each dataset is tagged with one or multiple concept terms that refer to various aspects of a dataset, such as the field/topic of research, the outcome measure used for the analysis, the model(s) used for analyzing the data, and the methods/concepts that can be illustrated with the dataset.
+   Each dataset is tagged with one or multiple concept terms that refer to various aspects of a dataset, such as the biogeochemical tags, the biomineral archives/structures, the microchemical/isotopic elements, and the FAO major fishing areas that can be illustrated with the dataset.
 
    \itemize{
       \item In terms of \sQuote{biogeochemical tags}, the following terms have been used at least once: bulk elements,isotopic ratios.
