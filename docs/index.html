@@ -126,7 +126,7 @@
 <div class="section level2">
 <h2 id="browsing-and-searching-for-datasets">Browsing and Searching for Datasets<a class="anchor" aria-label="anchor" href="#browsing-and-searching-for-datasets"></a>
 </h2>
-<p>A listing of all datasets in the package can be obtained with <code><a href="https://rdrr.io/pkg/MFishBTdat/man" class="external-link">help(package=MFishBTdat)</a></code>. Each dataset is also tagged with one or multiple concept terms. These concept terms refer to various aspects of a dataset, such as the field/topic of research, the outcome measure used for the analysis, the model(s) used for analyzing the data, and the methods/concepts that can be illustrated with the dataset. The <a href="https://Otoliths.github.io/MFishBTdat/reference/dat_search.html" class="external-link"><code>dat_search()</code></a> function can be used to search among the existing datasets in the package based on their concept terms or based on a full-text search of their corresponding help files.</p>
+<p>A listing of all datasets in the package can be obtained with <code><a href="https://rdrr.io/pkg/MFishBTdat/man" class="external-link">help(package = MFishBTdat)</a></code>. Each dataset is also tagged with one or multiple concept terms. These concept terms refer to various aspects of a dataset, such as the biogeochemical tags, the biomineral archives/structures, the microchemical/isotopic elements, and the FAO major fishing areas that can be illustrated with the dataset. The <a href="https://Otoliths.github.io/MFishBTdat/reference/dat_search.html" class="external-link"><code>dat_search()</code></a> function can be used to search among the existing datasets in the package based on their concept terms or based on a full-text search of their corresponding help files.</p>
 <p>You can also read the documentation online at <a href="https://Otoliths.github.io/MFishBTdat/" class="external-link">https://Otoliths.github.io/MFishBTdat/</a> (where the output from the example analyses corresponding to each dataset is provided).</p>
 </div>
 <div class="section level2">
@@ -134,7 +134,7 @@
 </h2>
 <p>We welcome contributions of new datasets to the package. For each dataset, there must be a citable reference, ideally in a peer-reviewed journal or publication. The general workflow for contributing a new dataset is as follows:</p>
 <ul>
-<li>Install the <code>MFishBTdat</code> package in R in the usual manner (i.e., <code>install.packages("MFishBTdat")</code>).</li>
+<li>Install the <code>MFishBTdat</code> package in R in the usual manner (i.e., <code>remotes::install_github("Otoliths/MFishBTdat")</code>).</li>
 <li>If you are familiar with Git/GitHub and making pull requests, fork the <a href="https://github.com/Otoliths/MFishBTdat" class="external-link">package repository</a>. Otherwise, <a href="https://github.com/Otoliths/MFishBTdat/archive/master.zip" class="external-link">download</a> the source version of the package from GitHub and unzip the file to some directory on your computer.</li>
 <li>Place the raw data (in a non-binary format) in the <code>data-raw</code> directory. The file should be named <code>bt.&lt;author&gt;.&lt;year&gt;.&lt;ext&gt;</code>, where <code>&lt;author&gt;</code> is the last name of the first author of the publication from which the data come, <code>&lt;year&gt;</code> is the publication year, and <code>&lt;ext&gt;</code> is the file extension (e.g., <code>.txt</code>, <code>.csv</code>).</li>
 <li>Place a corresponding R script in the <code>data-raw</code> directory named <code>bt.&lt;author&gt;.&lt;year&gt;.r</code> that reads in the data, possibly does some data cleaning/processing, and then saves the dataset to the <code>data</code> directory (using <code><a href="https://rdrr.io/r/base/save.html" class="external-link">save()</a></code>), with name <code>bt.&lt;author&gt;.&lt;year&gt;.rda</code>.</li>
@@ -203,7 +203,7 @@
 
 <div class="pkgdown">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 
