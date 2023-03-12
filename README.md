@@ -26,7 +26,7 @@ You can also read the documentation online at [https://Otoliths.github.io/MFishB
 
 We welcome contributions of new datasets to the package. For each dataset, there must be a citable reference, ideally in a peer-reviewed journal or publication. The general workflow for contributing a new dataset is as follows:
 
-- Install the `MFishBTdat` package in R in the usual manner (i.e., `remotes::install_github("Otoliths/MFishBTdat")`).
+- Install the `MFishBTdat` package in R in the usual manner (i.e., `install_github("Otoliths/MFishBTdat")`).
 - If you are familiar with Git/GitHub and making pull requests, fork the [package repository](https://github.com/Otoliths/MFishBTdat). Otherwise, [download](https://github.com/Otoliths/MFishBTdat/archive/master.zip) the source version of the package from GitHub and unzip the file to some directory on your computer.
 - Place the raw data (in a non-binary format) in the `data-raw` directory. The file should be named `bt.<author>.<year>.<ext>`, where `<author>` is the last name of the first author of the publication from which the data come, `<year>` is the publication year, and `<ext>` is the file extension (e.g., `.txt`, `.csv`).
 - Place a corresponding R script in the `data-raw` directory named `bt.<author>.<year>.r` that reads in the data, possibly does some data cleaning/processing, and then saves the dataset to the `data` directory (using `save()`), with name `bt.<author>.<year>.rda`.
