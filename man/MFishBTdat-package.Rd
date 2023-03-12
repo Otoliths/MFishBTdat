@@ -15,7 +15,7 @@
    We welcome contributions of new datasets to the package. For each dataset, there must be a citable reference, ideally in a peer-reviewed journal or publication. The general workflow for contributing a new dataset is as follows:
 
    \itemize{
-   \item Install the \code{MFishBTdat} package in R in the usual manner (i.e., \code{install.packages("MFishBTdat")}).
+   \item Install the \code{MFishBTdat} package in R in the usual manner (i.e., \code{install_github("Otoliths/MFishBTdat")}).
    \item If you are familiar with Git/GitHub and making pull requests, fork the \href{https://github.com/Otoliths/MFishBTdat}{package repository}. Otherwise, \href{https://github.com/Otoliths/MFishBTdat/archive/master.zip}{download} the source version of the package from GitHub and unzip the file to some directory on your computer.
    \item Place the raw data (in a non-binary format) in the \code{data-raw} directory. The file should be named \code{bt.<author>.<year>.<ext>}, where \code{<author>} is the last name of the first author of the publication from which the data come, \code{<year>} is the publication year, and \code{<ext>} is the file extension (e.g., \code{.txt}, \code{.csv}).
    \item Place a corresponding R script in the \code{data-raw} directory named \code{bt.<author>.<year>.r} that reads in the data, possibly does some data cleaning/processing, and then saves the dataset to the \code{data} directory (using \code{\link{save}}), with name \code{bt.<author>.<year>.rda}.
