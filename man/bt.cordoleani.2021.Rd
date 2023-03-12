@@ -41,7 +41,7 @@ Traversing the paper's information via Semantic Scholar ID \verb{e71577a8327b918
 \examples{
 ### copy data into 'dat'
 dat <- bt.cordoleani.2021
-
+tibble::tibble(dat)
 
 \dontrun{
 ### Sr profile figure
@@ -53,12 +53,12 @@ ggplot(data = dat,aes(distance, otoSr))+
   facet_grid(.~ reartype)+
   labs(
     x = (expression(paste("Otolith radius (", mu, "m)", sep = ""))),
-    y = (expression(paste(
+    y = expression(paste(
       {}^"87",
       "Sr/",
       {}^"86",
       "Sr"
-    )))
+    ))
   )+
   scale_x_continuous(limits = c(0, 1200), breaks = seq(0, 1200, 200)) +
   scale_y_continuous(limits = c(0.7035, 0.710), breaks = seq(0.704, 0.710, 0.001)) +
