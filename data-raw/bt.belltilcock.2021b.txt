@@ -1,4 +1,4 @@
-"Fish_ID" "Sample" "Spot_number" "age" "distance" "Spot_designation" "d34Scor_vcdt" "wStdErr_95T_permil"
+"fish_id" "sample" "spot_number" "age" "distance" "spot_designation" "d34scor_vcdt" "w_std_err_95t_permil"
 "1" "NP163500" "CH-1" "CH-1-EDGE" NA -440 "River" 5.67201616737996 0.879033809
 "2" "NP163500" "CH-1" "CH-1.2" NA -400 "Transition" 8.25872902656073 0.955644408
 "3" "NP163500" "CH-1" "CH-1.3" NA -360 "Hatchery" 13.5358841111337 1.05732072

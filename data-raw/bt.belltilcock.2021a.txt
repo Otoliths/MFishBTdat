@@ -1,4 +1,4 @@
-"layer_no" "d13C" "d15N" "d34S" "Habitat" "C_ug" "N_ug" "S_ug" "C:N" "predicted_dm" "life_history"
+"layer_no" "d13c" "d15n" "d34s" "habitat" "c_ug" "n_ug" "s_ug" "c_n" "predicted_dm" "life_history"
 "1" 0 -15.91 14.27 14.48 "Maternal" 36.28 16.08 3.03 2.256020543 0.253862749 "Adult"
 "2" 1 -16.06 14.53 13.51 "Maternal" 1.84 5.19 0.57 0.355091758 0.383137709 "Adult"
 "3" 2 -16.6 13.92 14 "Maternal" 33.4 14.99 2.8 2.227671705 0.512412669 "Adult"
