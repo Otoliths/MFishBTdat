@@ -5,4 +5,3 @@ bt.brennan.2019 <- read.table("data-raw/bt.brennan.2019.txt",
   header = TRUE, stringsAsFactors = FALSE
 )
 save(bt.brennan.2019, file = "data/bt.brennan.2019.rda", compress = "xz")
-
