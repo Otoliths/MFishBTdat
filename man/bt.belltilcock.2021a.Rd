@@ -4,22 +4,22 @@
 \title{Tracking habitat use and dietary shifts in migratory species}
 \description{Stable isotope analysis in eye lenses using three dietary isotopes (d13C, d15N and d34S) has significant
 potential for answering critical questions about migration, diet, foraging ecology and life history of
-migratory aquatic animals on Earth.}
+migratory aquatic animals on earth.}
 \usage{
 bt.belltilcock.2021a
 }
 \format{The data frame 33 × 11 contains the following columns:
 \tabular{lll}{
 \bold{layer_no}  \tab \code{integer} \tab this is the which lens layer the data references, numeric value \cr
-\bold{d13C}     \tab \code{numeric} \tab carbon isotope value, per mille \cr
-\bold{d15N}  \tab \code{numeric} \tab nitrogen isotope value, per mille \cr
-\bold{d34S}     \tab \code{numeric}   \tab sulfur isotope value, per mille \cr
-\bold{habitat}  \tab \code{character} \tab this is the habitat the fish was throughout their life cycle, text \cr
-\bold{C_ug}     \tab \code{numeric} \tab concentration of carbon, micrograms \cr
-\bold{N_ug}     \tab \code{numeric} \tab concentration of nitrogen, micrograms \cr
-\bold{S_ug}     \tab \code{numeric} \tab concentration of sulfur, micrograms \cr
-\bold{C.N}     \tab \code{numeric} \tab this is the carbon to nitrogen ratio, no units \cr
-\bold{predicted_dm}     \tab \code{numeric} \tab this the predicted diameter of this fish's eye lense created from a model \cr
+\bold{d13c}     \tab \code{numeric} \tab carbon isotope value, per mille \cr
+\bold{d15n}  \tab \code{numeric} \tab nitrogen isotope value, per mille \cr
+\bold{d34s}     \tab \code{numeric}   \tab sulfur isotope value, per mille \cr
+\bold{habitat}  \tab \code{character} \tab habitat the fish was throughout their life cycle \cr
+\bold{c_ug}     \tab \code{numeric} \tab concentration of carbon, micrograms \cr
+\bold{n_ug}     \tab \code{numeric} \tab concentration of nitrogen, micrograms \cr
+\bold{s_ug}     \tab \code{numeric} \tab concentration of sulfur, micrograms \cr
+\bold{c_n}     \tab \code{numeric} \tab carbon to nitrogen ratio, no units \cr
+\bold{predicted_dm}     \tab \code{numeric} \tab predicted diameter of this fish's eye lense created from a model \cr
 \bold{life_history}    \tab \code{character}   \tab  life history stage
 }
 }
@@ -51,7 +51,7 @@ library(tidyr)
 
 ### Adult Chinook Salmon Lens CNS isotope
 dat[which(dat$life_history == "Adult"),] |>
-  pivot_longer(cols = c("d13C","d15N","d34S"),
+  pivot_longer(cols = c("d13c","d15n","d34s"),
                names_to = "isotope",
                values_to = "values") |>
   ggplot(aes(layer_no,values))+
@@ -69,7 +69,7 @@ dat[which(dat$life_history == "Adult"),] |>
 
 ### Juvenile Chinook Salmon Lens CNS isotope
 dat[which(dat$life_history == "Juvenile"),] |>
-  pivot_longer(cols = c("d13C","d15N","d34S"),
+  pivot_longer(cols = c("d13c","d15n","d34s"),
                names_to = "isotope",
                values_to = "values") |>
   ggplot(aes(layer_no,values))+
@@ -84,8 +84,6 @@ dat[which(dat$life_history == "Juvenile"),] |>
     text = element_text(size = 10), legend.title = element_blank(),
     plot.title = element_text(face = "bold")
   )
-
-
 }
 }
 \keyword{datasets}

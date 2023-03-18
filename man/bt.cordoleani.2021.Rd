@@ -2,27 +2,27 @@
 \docType{data}
 \alias{bt.cordoleani.2021}
 \title{Studies of spring-run chinook salmon life history diversity}
-\description{Results from Chinook salmon otolith strontium isotope profiles separated into early, intermediate and late migrants.}
+\description{Results from chinook salmon otolith strontium isotope profiles separated into early, intermediate and late migrants.}
 \usage{
 bt.cordoleani.2021
 }
 \format{The data frame 2,969 × 9 contains the following columns:
 \tabular{lll}{
-\bold{sample}  \tab \code{character} \tab fish id \cr
-\bold{year}     \tab \code{integer} \tab year of captured \cr
+\bold{sample}  \tab \code{character} \tab fish identifier \cr
+\bold{year}     \tab \code{integer} \tab year of capture \cr
 \bold{watershed}  \tab \code{character} \tab watershed of captured \cr
-\bold{distance}     \tab \code{numeric}   \tab distance of from otolith core to edge \cr
-\bold{otoSr}    \tab \code{numeric}   \tab otolith strontium isotope data (Sr8786)  \cr
-\bold{SE1}     \tab \code{numeric}   \tab standard error of otolith strontium isotope data (Sr8786) \cr
-\bold{SrV}     \tab \code{numeric}   \tab srv \cr
-\bold{SrVcol}     \tab \code{numeric}   \tab srvcol \cr
+\bold{distance}     \tab \code{numeric}   \tab distance from otolith core to edge (um) \cr
+\bold{oto_sr}    \tab \code{numeric}   \tab otolith strontium isotope data (Sr8786)  \cr
+\bold{se1}     \tab \code{numeric}   \tab standard error of otolith strontium isotope data (Sr8786) \cr
+\bold{sr_v}     \tab \code{numeric}   \tab strontium signal (v) \cr
+\bold{sr_vcol}     \tab \code{numeric}   \tab strontium signal (vcol) \cr
 \bold{reartype}    \tab \code{character}   \tab  three life history types of chinook salmon
 }
 }
 \details{
-   The dataset contains Chinook salmon otolith strontium isotope profiles. Otolith isotope profiles revealed three distinct juvenile life history types (hereafter referred to as 'early', 'intermediate' and 'late' migrants.
+   The dataset contains chinook salmon otolith strontium isotope profiles. Otolith isotope profiles revealed three distinct juvenile life history types (referred to as 'early', 'intermediate' and 'late' migrants).
 
-   In threatened spring-run Chinook salmon spawning at the southern edge of the species range,
+   In threatened spring-run chinook salmon spawning at the southern edge of the species range,
 this study found that late-migrating juveniles are critical to cohort success in years characterized by droughts and ocean heatwaves. Late
 migrants rely on cool river temperatures over summer, increasingly rare due to the combined effects of warming and impassable
 dams.
@@ -48,7 +48,7 @@ tibble::tibble(dat)
 library(dplyr)
 library(ggplot2)
 
-ggplot(data = dat,aes(distance, otoSr))+
+ggplot(data = dat,aes(distance, oto_sr))+
   geom_line(aes(col = reartype),show.legend = F,linewidth = 0.02, na.rm = T)+
   facet_grid(.~ reartype)+
   labs(
@@ -69,7 +69,6 @@ ggplot(data = dat,aes(distance, otoSr))+
     text = element_text(size = 10), legend.title = element_blank(),
     plot.title = element_text(face = "bold")
   )
-
 }
 }
 \keyword{datasets}

@@ -21,7 +21,7 @@ bt.matsubayashi.2017
 \details{
 Sulfur stable isotope ratios of vertebral sections of masu salmon. Each vertebral centrum was subdivided equally into 10 sections numbered from the center (01) to the margin (10). Fish samples were collected in the Churui River, Hokkaido Islands, japan. All fish samples analyzed consisted of bone collagen.
 
-Elemental and 87Sr/86Sr analyses of fish otolith sections from masu salmon (identified as OM-01, OM-02 and OM-03) collected from the Churui River, water from the Churui River, and sea water collected approximately 10 km south of the mouth of the Churui River.
+Elemental and 87Sr/86Sr analyses of fish otolith sections from masu salmon (identified as OM-01, OM-02 and OM-03) collected from the Churui River.
 
 }
 \source{
@@ -52,8 +52,8 @@ dat[which(dat$element_ratio == "d34S"), ] |>
   geom_point(aes(colour = fish_samples), show.legend = F) +
   geom_line(aes(colour = fish_samples), show.legend = F) +
   labs(
-    x = ("Vertebral section number"),
-    y = (expression(delta * ""^34 * "S" * " (‰)"))
+    x = "Vertebral section number",
+    y = expression(delta * ""^34 * "S" * " (‰)")
   ) +
   theme_bw() +
   theme(
@@ -71,12 +71,12 @@ dat[which(dat$element_ratio == "Sr8786"), ] |>
   geom_line(aes(colour = fish_samples), show.legend = F) +
   labs(
     x = expression(paste("Distance from core (", mu, "m)", sep = "")),
-    y = ((expression(paste(
+    y = expression(paste(
       {}^"87",
       "Sr/",
       {}^"86",
       "Sr"
-    ))))
+    ))
   ) +
   theme_bw() +
   theme(
@@ -105,7 +105,6 @@ dat[which(dat$element_ratio == "Sr/Ca"), ] |>
     plot.title = element_text(face = "bold")
   ) +
   scale_x_continuous(breaks = c(0, 200, 400, 600, 800, 1000, 1200))
-
 }
 }
 \keyword{datasets}

@@ -8,20 +8,20 @@ bt.grammer.2017
 }
 \format{The data frame 2,688 × 14 contains the following columns:
 \tabular{lll}{
-\bold{IDCode}  \tab \code{character} \tab unique identifier for each fish \cr
-\bold{age.years.cap}  \tab \code{integer} \tab age of the fish in years at date of capture \cr
-\bold{age.month.cap}  \tab \code{integer} \tab age of the fish in months at date of capture \cr
-\bold{month.code.cap}  \tab \code{integer} \tab month code for the date of capture, e.g. 75 = Dec 1996 \cr
-\bold{FishID}  \tab \code{character} \tab = IDCode \cr
-\bold{Month}  \tab \code{integer} \tab a code designating the specific month and year of each monthly resolved increment (i.e. 75 = Dec 1996, 76 = Jan 1997, etc.) \cr
-\bold{Age}  \tab \code{integer} \tab age when each monthly increment was formed (total months) \cr
-\bold{fMonth}  \tab \code{integer} \tab = Month (as factor) \cr
-\bold{Growth}  \tab \code{numeric} \tab measured value of the growth increment (μm) for that discrete monthly time period \cr
-\bold{SrCa}  \tab \code{numeric} \tab value of the Sr:Ca ratio for that discrete monthly time period (μmol/mol) \cr
-\bold{NaCa}  \tab \code{numeric} \tab value of the Na:Ca ratio for that discrete monthly time period (μmol/mol) \cr
-\bold{BaCa}  \tab \code{numeric} \tab value of the Ba:Ca ratio for that discrete monthly time period (μmol/mol) \cr
-\bold{MgCa}  \tab \code{numeric} \tab value of the Mg:Ca ratio for that discrete monthly time period (μmol/mol) \cr
-\bold{LiCa}  \tab \code{numeric} \tab value of the Li:Ca ratio for that discrete monthly time period (μmol/mol)
+\bold{id_code}  \tab \code{character} \tab unique identifier for each fish \cr
+\bold{age_years_cap}  \tab \code{integer} \tab age of the fish in years at date of capture \cr
+\bold{age_month_cap}  \tab \code{integer} \tab age of the fish in months at date of capture \cr
+\bold{month_code_cap}  \tab \code{integer} \tab month code for the date of capture, e.g. 75 = Dec 1996 \cr
+\bold{fish_id}  \tab \code{character} \tab = id_code \cr
+\bold{month}  \tab \code{integer} \tab a code designating the specific month and year of each monthly resolved increment (i.e. 75 = Dec 1996, 76 = Jan 1997, etc.) \cr
+\bold{age}  \tab \code{integer} \tab age when each monthly increment was formed (total months) \cr
+\bold{f_month}  \tab \code{integer} \tab = month (as factor) \cr
+\bold{growth}  \tab \code{numeric} \tab measured value of the growth increment (μm) for that discrete monthly time period \cr
+\bold{sr_ca}  \tab \code{numeric} \tab value of the Sr:Ca ratio for that discrete monthly time period (μmol/mol) \cr
+\bold{na_ca}  \tab \code{numeric} \tab value of the Na:Ca ratio for that discrete monthly time period (μmol/mol) \cr
+\bold{ba_ca}  \tab \code{numeric} \tab value of the Ba:Ca ratio for that discrete monthly time period (μmol/mol) \cr
+\bold{mg_ca}  \tab \code{numeric} \tab value of the Mg:Ca ratio for that discrete monthly time period (μmol/mol) \cr
+\bold{li_ca}  \tab \code{numeric} \tab value of the Li:Ca ratio for that discrete monthly time period (μmol/mol)
 
 }
 }
@@ -52,8 +52,8 @@ library(dplyr)
 library(ggplot2)
 
 ### Sr/Ca
-ggplot(data = dat, aes(Age, SrCa)) +
-  geom_line(aes(group = FishID), show.legend = F, na.rm = T) +
+ggplot(data = dat, aes(age, sr_ca)) +
+  geom_line(aes(group = fish_id), show.legend = F, na.rm = T) +
   labs(
     x = expression("Age (months)"),
     y = expression(paste("Sr/Ca (", μmol / mol, ")", sep = ""))
@@ -67,8 +67,8 @@ ggplot(data = dat, aes(Age, SrCa)) +
   )
 
 ### Na/Ca
-ggplot(data = dat, aes(Age, NaCa)) +
-  geom_line(aes(group = FishID), show.legend = F, na.rm = T) +
+ggplot(data = dat, aes(age, na_ca)) +
+  geom_line(aes(group = fish_id), show.legend = F, na.rm = T) +
   labs(
     x = expression("Age (months)"),
     y = expression(paste("Na/Ca (", μmol / mol, ")", sep = ""))
@@ -82,8 +82,8 @@ ggplot(data = dat, aes(Age, NaCa)) +
   )
 
 ### Ba/Ca
-ggplot(data = dat, aes(Age, BaCa)) +
-  geom_line(aes(group = FishID), show.legend = F, na.rm = T) +
+ggplot(data = dat, aes(age, ba_ca)) +
+  geom_line(aes(group = fish_id), show.legend = F, na.rm = T) +
   labs(
     x = expression("Age (months)"),
     y = expression(paste("Ba/Ca (", μmol / mol, ")", sep = ""))
@@ -97,8 +97,8 @@ ggplot(data = dat, aes(Age, BaCa)) +
   )
 
 ### Mg/Ca
-ggplot(data = dat, aes(Age, MgCa)) +
-  geom_line(aes(group = FishID), show.legend = F, na.rm = T) +
+ggplot(data = dat, aes(age, mg_ca)) +
+  geom_line(aes(group = fish_id), show.legend = F, na.rm = T) +
   labs(
     x = expression("Age (months)"),
     y = expression(paste("Mg/Ca (", μmol / mol, ")", sep = ""))
@@ -112,8 +112,8 @@ ggplot(data = dat, aes(Age, MgCa)) +
   )
 
 ### Li/Ca
-ggplot(data = dat, aes(Age, LiCa)) +
-  geom_line(aes(group = FishID), show.legend = F, na.rm = T) +
+ggplot(data = dat, aes(age, li_ca)) +
+  geom_line(aes(group = fish_id), show.legend = F, na.rm = T) +
   labs(
     x = expression("Age (months)"),
     y = expression(paste("Li/Ca (", μmol / mol, ")", sep = ""))
@@ -128,8 +128,8 @@ ggplot(data = dat, aes(Age, LiCa)) +
 
 ### Growth
 
-ggplot(data = dat, aes(Age, Growth)) +
-  geom_line(aes(group = FishID), show.legend = F, na.rm = T) +
+ggplot(data = dat, aes(age, growth)) +
+  geom_line(aes(group = fish_id), show.legend = F, na.rm = T) +
   labs(
     x = expression("Age (months)"),
     y = expression(paste("Growth (", mu, "m)", sep = ""))
@@ -141,8 +141,6 @@ ggplot(data = dat, aes(Age, Growth)) +
     text = element_text(size = 10), legend.title = element_blank(),
     plot.title = element_text(face = "bold")
   )
-
-
 }
 }
 \keyword{datasets}

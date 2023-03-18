@@ -8,9 +8,9 @@ bt.brennan.2019
 }
 \format{The data frame 60,690 × 10 contains the following columns:
 \tabular{lll}{
-\bold{fileID}  \tab \code{character} \tab file ID \cr
-\bold{smpID}  \tab \code{character} \tab sample ID \cr
-\bold{dateCollected}  \tab \code{character} \tab date sample collected \cr
+\bold{file_id}  \tab \code{character} \tab file identifier \cr
+\bold{smp_id}  \tab \code{character} \tab sample identifier \cr
+\bold{date_collected}  \tab \code{character} \tab date sample collected \cr
 \bold{size}  \tab \code{integer} \tab body mass \cr
 \bold{age}  \tab \code{numeric} \tab age of captured \cr
 \bold{oto_sr8786}  \tab \code{numeric} \tab sr isotopes \cr
@@ -20,10 +20,10 @@ bt.brennan.2019
 }
 }
 \details{
-The otolith Sr isotopes dataset from Chinook salmon (Oncorhynchus tshawytscha) harvested in 2011 during a coastal fishery in Bristol Bay.
+The otolith Sr isotopes dataset from chinook salmon (\emph{Oncorhynchus tshawytscha}) harvested in 2011 during a coastal fishery in Bristol Bay.
 }
 \source{
-Brennan, S. R., Cline, T. J., & Schindler, D. E. (2019). Quantifying habitat use of migratory fish across riverscapes using space‐time isotope models. \emph{Methods in Ecology and Evolution},\bold{10}(7), 1036-1047. \verb{https://doi.org/10.1111/2041-210X.13191}
+Brennan, S. R., Cline, T. J., & Schindler, D. E. (2019). Quantifying habitat use of migratory fish across riverscapes using space-time isotope models. \emph{Methods in Ecology and Evolution},\bold{10}(7), 1036--1047. \verb{https://doi.org/10.1111/2041-210X.13191}
 
 Code and Data availability are available at \verb{https://doi.org/10.5061/dryad.6f462d4}
 
@@ -44,7 +44,7 @@ library(ggplot2)
 
 ### Sr isotopes
 ggplot(data = dat, aes(proportion_growth, oto_sr8786)) +
-  geom_line(aes(group = smpID, colour = sex), show.legend = F) +
+  geom_line(aes(group = smp_id, colour = sex), show.legend = F) +
   facet_grid(sex ~ ., scales = "free_y") +
   xlab("Proportion of growth (um in otolith)") +
   ylab(expression(paste(
@@ -60,7 +60,6 @@ ggplot(data = dat, aes(proportion_growth, oto_sr8786)) +
     text = element_text(size = 10), legend.title = element_blank(),
     plot.title = element_text(face = "bold")
   )
-
 }
 }
 \keyword{datasets}

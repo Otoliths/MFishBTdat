@@ -12,7 +12,7 @@ bt.pereira.2019
 \tabular{lll}{
 \bold{specimen_code}  \tab \code{character} \tab specimen id \cr
 \bold{distance}     \tab \code{integer} \tab distance from fish otolith cores – edge transects (unit: micron) \cr
-\bold{oto_sr8786}    \tab \code{numeric}   \tab Variation of 87Sr/86Sr measured by LAfs-MC-ICPMS  \cr
+\bold{oto_sr8786}    \tab \code{numeric}   \tab variation of 87Sr/86Sr measured by LAfs-MC-ICPMS  \cr
 \bold{fish_origin}     \tab \code{character}   \tab wild fish and farmed fish \cr
 \bold{region}     \tab \code{character}   \tab region of captured
 }

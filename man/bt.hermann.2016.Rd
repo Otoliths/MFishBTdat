@@ -1,9 +1,9 @@
 \name{bt.hermann.2016}
 \docType{data}
 \alias{bt.hermann.2016}
-\title{Studies of unravelling the life history of Amazonian fishes}
+\title{Unravelling the life history of Amazonian fishes}
 \description{
-The results of this study suggested that \emph{B. filamentosum} did not enter the estuary during its life history, and introduced what should be a productive line of research desperately needed to better understand the migrations of these unique and imperilled fishes.
+The results of this study suggested that \emph{Brachyplatystoma filamentosum} did not enter the estuary during its life history, and introduced what should be a productive line of research desperately needed to better understand the migrations of these unique and imperilled fishes.
 
 }
 \usage{
@@ -11,16 +11,16 @@ bt.hermann.2016
 }
 \format{The data frame 7,035 × 6 contains the following columns:
 \tabular{lll}{
-\bold{sampleid}  \tab \code{character} \tab sample id \cr
+\bold{sampleid}  \tab \code{character} \tab fish identifier \cr
 \bold{species}     \tab \code{character} \tab species studied \cr
-\bold{distance}    \tab \code{numeric}   \tab distance from fish otolith cores – edge transects (unit: micron)  \cr
+\bold{distance}    \tab \code{numeric}   \tab distance from fish otolith cores-edge transects (unit: micron)  \cr
 \bold{value}     \tab \code{character}   \tab Laser ablation–inductively coupled plasma mass spectrometry raw value \cr
 \bold{oto_element}     \tab \code{character}   \tab bulk elements: Ba, Sr, Ca, Mn \cr
 \bold{locality}     \tab \code{character}   \tab locality of captured
 }
 }
 \details{
-   Laser ablation–inductively coupled plasma mass spectrometry raw data (background- and drift-corrected) for \emph{Brachyplatystoma rousseauxii} (Ecuador and Colombia), \emph{Brachyplatystoma filamentosum} (Colombia), and six Prochilodus nigricans. Data include Ca, Sr, and Ba for both Brachyplatystoma species and localities, and Ca, Ba, and Mn for all six \emph{P. nigricans}.
+   Laser ablation–inductively coupled plasma mass spectrometry raw data (background- and drift-corrected) for \emph{Brachyplatystoma rousseauxii} (Ecuador and Colombia), \emph{Brachyplatystoma filamentosum} (Colombia), and six \emph{Prochilodus nigricans}. Data include Ca, Sr, and Ba for both Brachyplatystoma species and localities, and Ca, Ba, and Mn for all six \emph{P. nigricans}.
 }
 \source{
 

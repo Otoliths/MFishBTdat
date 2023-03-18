@@ -8,13 +8,13 @@ bt.sakamoto.2022
 }
 \format{The data frame 1,558 × 7 contains the following columns:
 \tabular{lll}{
-\bold{Region.ID}  \tab \code{character} \tab "JP" is JP sardine and "CA is CA sardine \cr
-\bold{Fish.ID}     \tab \code{character} \tab Fish identifier \cr
-\bold{Year.class}    \tab \code{integer}   \tab Year of hach  \cr
-\bold{Station.ID}     \tab \code{character}   \tab Number of station in cuise surveys or ID of landing port \cr
-\bold{Age.range}    \tab \code{character}   \tab Specifies the age range that was micromilled that are differently defined for JP and CA sardine. For JP: {A: 0-30 dph, B: 31-45 dph, C: 46-60 dph, D: 61-75 dph, E: 76-90 dph, F: 91-105 dph, G: 106-120 dph} and for CA: {A: 0-30 dph, B: 31-60 dph, C: 61-90 dph, D: 91-120 dph, E: 121-150 dph}  \cr
-\bold{d13C}     \tab \code{numeric}   \tab Stable carbon isotope ratio relative to VPDB in permil \cr
-\bold{d18O}     \tab \code{numeric}   \tab Stable oxygen isotope ratio relative to VPDB in permil
+\bold{region_id}  \tab \code{character} \tab "JP" is JP sardine and "CA is CA sardine \cr
+\bold{fish_id}     \tab \code{character} \tab fish identifier \cr
+\bold{year_class}    \tab \code{integer}   \tab year of hach  \cr
+\bold{station_id}     \tab \code{character}   \tab number of station in cuise surveys or ID of landing port \cr
+\bold{age_range}    \tab \code{character}   \tab specifies the age range that was micromilled that are differently defined for JP and CA sardine. For JP: {A: 0-30 dph, B: 31-45 dph, C: 46-60 dph, D: 61-75 dph, E: 76-90 dph, F: 91-105 dph, G: 106-120 dph} and for CA: {A: 0-30 dph, B: 31-60 dph, C: 61-90 dph, D: 91-120 dph, E: 121-150 dph}  \cr
+\bold{d13c}     \tab \code{numeric}   \tab stable carbon isotope ratio relative to VPDB in permil \cr
+\bold{d18o}     \tab \code{numeric}   \tab stable oxygen isotope ratio relative to VPDB in permil
 }
 }
 \details{
@@ -43,9 +43,9 @@ library(dplyr)
 library(ggplot2)
 
 ### d13C profile figure
-ggplot(data = dat,aes(Age.range, d13C))+
-  geom_boxplot(aes(col = Region.ID),show.legend = F,size = 0.02, na.rm = T)+
-  facet_grid(.~ Region.ID)+
+ggplot(data = dat,aes(age_range, d13c))+
+  geom_boxplot(aes(col = region_id),show.legend = F,size = 0.02, na.rm = T)+
+  facet_grid(.~ region_id)+
   labs(
     x = ("Age range"),
     y = (expression(delta * ""^13 * "C" * " (‰)"))
@@ -59,9 +59,9 @@ ggplot(data = dat,aes(Age.range, d13C))+
   )
 
 ### d18O profile figure
-ggplot(data = dat,aes(Age.range, d18O))+
-  geom_boxplot(aes(col = Region.ID),show.legend = F,size = 0.02, na.rm = T)+
-  facet_grid(.~ Region.ID)+
+ggplot(data = dat,aes(age_range, d18o))+
+  geom_boxplot(aes(col = region_id),show.legend = F,size = 0.02, na.rm = T)+
+  facet_grid(.~ region_id)+
   labs(
     x = ("Age range"),
     y = (expression(delta * ""^18 * "O" * " (‰)"))
@@ -73,7 +73,6 @@ ggplot(data = dat,aes(Age.range, d18O))+
     text = element_text(size = 10), legend.title = element_blank(),
     plot.title = element_text(face = "bold")
   )
-
 }
 }
 \keyword{datasets}

@@ -2,24 +2,24 @@
 \docType{data}
 \alias{bt.sturrock.2020}
 \title{Unnatural selection of salmon life histories in a modified riverscape}
-\description{The expression and ultimate success of diverse salmon emigration behaviors in an anthropogenically altered California river system is quantified and management actions favoring any single phenotype could have negative evolutionary and demographic consequences, potentially reducing adaptability and population stability.}
+\description{The expression and ultimate success of diverse salmon emigration behaviors in an anthropogenically altered the California river system is quantified and management actions favoring any single phenotype could have negative evolutionary and demographic consequences, potentially reducing adaptability and population stability.}
 \usage{
 bt.sturrock.2020
 }
 \format{The data frame 16,463 × 12 contains the following columns:
 \tabular{lll}{
-\bold{Sample_ID}  \tab \code{character} \tab sample identifier \cr
-\bold{ASN}     \tab \code{integer} \tab numbers represent the agency ID given to each fish \cr
-\bold{Natal_region}    \tab \code{character}   \tab natal region  \cr
-\bold{Otolith_radius_um}     \tab \code{numeric}   \tab otolith radius (um) \cr
-\bold{Otolith_87Sr86Sr}    \tab \code{numeric}   \tab otolith strontium isotope (Sr87/Sr86) values   \cr
-\bold{SE2}     \tab \code{numeric}   \tab otolith strontium isotope (Sr87/Sr86) standard error \cr
-\bold{SrV}     \tab \code{numeric}   \tab SrV \cr
-\bold{Outmigration_year}     \tab \code{integer}   \tab year of Out-migration \cr
-\bold{Capture_FL_cm}     \tab \code{numeric}   \tab fish fork length of captured \cr
-\bold{Capture_Age}     \tab \code{integer}   \tab fish age of captured \cr
-\bold{Sex}     \tab \code{character}   \tab fish sex(male or female) \cr
-\bold{CWT_no}     \tab \code{integer}   \tab fish analyzed blind to validate natal assignment accuracy
+\bold{sample_id}  \tab \code{character} \tab sample identifier \cr
+\bold{asn}     \tab \code{integer} \tab numbers represent the agency id given to each fish \cr
+\bold{natal_region}    \tab \code{character}   \tab natal region  \cr
+\bold{otolith_radius_um}     \tab \code{numeric}   \tab otolith radius (um) \cr
+\bold{otolith_87sr86sr}    \tab \code{numeric}   \tab otolith strontium isotope (Sr87/Sr86) values   \cr
+\bold{se2}     \tab \code{numeric}   \tab otolith strontium isotope (Sr87/Sr86) standard error \cr
+\bold{sr_v}     \tab \code{numeric}   \tab srv \cr
+\bold{outmigration_year}     \tab \code{integer}   \tab year of out-migration \cr
+\bold{capture_fl_cm}     \tab \code{numeric}   \tab fish fork length of captured \cr
+\bold{capture_age}     \tab \code{integer}   \tab fish age of captured \cr
+\bold{sex}     \tab \code{character}   \tab fish sex(male or female) \cr
+\bold{cwt_no}     \tab \code{integer}   \tab fish analyzed blind to validate natal assignment accuracy
 
 }
 }
@@ -54,17 +54,17 @@ library(dplyr)
 library(ggplot2)
 
 ### Sr8786 profile figure
-ggplot(data = dat,aes(Otolith_radius_um, Otolith_87Sr86Sr))+
-  geom_line(aes(col = Sex),show.legend = F,linewidth = 0.02, na.rm = T)+
-  facet_grid(.~ Sex)+
+ggplot(data = dat,aes(otolith_radius_um, otolith_87Sr86Sr))+
+  geom_line(aes(col = sex),show.legend = F,linewidth = 0.02, na.rm = T)+
+  facet_grid(.~ sex)+
   labs(
-    x = (expression(paste("Otolith radius (", mu, "m)", sep = ""))),
-    y = (expression(paste(
+    x = expression(paste("Otolith radius (", mu, "m)", sep = "")),
+    y = expression(paste(
       {}^"87",
       "Sr/",
       {}^"86",
       "Sr"
-    )))
+    ))
   )+
   theme_bw() +
   theme(
