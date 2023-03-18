@@ -18,5 +18,6 @@ Imports: utils,tools,mathjaxr
 Suggests: testthat,digest,ggplot2,S2miner,tibble
 License: GPL (>=2)
 Encoding: UTF-8
-LazyData: true
+LazyDataCompression: xz
+LazyData: True
 ByteCompile: TRUE
