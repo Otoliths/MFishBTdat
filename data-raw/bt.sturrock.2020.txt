@@ -1,4 +1,4 @@
-"Sample_ID" "ASN" "Natal_region" "Otolith_radius_um" "Otolith_87Sr86Sr" "SE2" "SrV" "Outmigration_year" "Capture_FL_cm" "Capture_Age" "Sex" "CWT_no"
+"sample_id" "asn" "natal_region" "otolith_radius_um" "otolith_87sr86sr" "se2" "sr_v" "outmigration_year" "capture_fl_cm" "capture_age" "sex" "cwt_no"
 "1" "SR11234" 11234 "" 30.68 0.708171716 3e-04 3.44802 2000 58 2 "F" NA
 "2" "SR11234" 11234 "" 75.31 0.708031722 0.000178 3.02852 2000 58 2 "F" NA
 "3" "SR11234" 11234 "" 125.06 0.707892729 0.000108 3.29743 2000 58 2 "F" NA

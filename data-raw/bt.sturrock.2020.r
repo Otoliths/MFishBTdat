@@ -4,3 +4,4 @@
 bt.sturrock.2020 <- read.table("data-raw/bt.sturrock.2020.txt",
                                header = TRUE, stringsAsFactors = FALSE)
 save(bt.sturrock.2020, file = "data/bt.sturrock.2020.rda", compress = "xz")
+

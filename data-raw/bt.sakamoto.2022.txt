@@ -1,4 +1,4 @@
-"Region.ID" "Fish.ID" "Year.class" "Station.ID" "Age.range" "d13C" "d18O"
+"region_id" "fish_id" "year_class" "station_id" "age_range" "d13c" "d18o"
 "1" "JP" "2015_9_HH_T9_1R" 2015 "2015_T9" "B" -6.929589508 -0.239773619
 "2" "JP" "2015_9_HH_T9_1R" 2015 "2015_T9" "C" -7.903177871 -0.147615101
 "3" "JP" "2015_9_HH_T9_1R" 2015 "2015_T9" "D" -7.769855971 -0.02693724
