@@ -3,5 +3,3 @@
 bt.cordoleani.2021 <- read.table("data-raw/bt.cordoleani.2021.txt",
                                  header = TRUE, stringsAsFactors = FALSE)
 save(bt.cordoleani.2021, file = "data/bt.cordoleani.2021.rda", compress = "xz")
-
-

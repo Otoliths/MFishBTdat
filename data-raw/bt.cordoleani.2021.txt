@@ -1,4 +1,4 @@
-"sample" "year" "watershed" "distance" "otoSr" "SE1" "SrV" "SrVcol" "reartype"
+"sample" "year" "watershed" "distance" "oto_sr" "se1" "sr_v" "sr_vcol" "reartype"
 "1" "DC07_01" 2007 "Deer Creek" 26.28 0.707157 9e-05 1.02 41.26984127 "IntermediateOutmigrant"
 "2" "DC07_01" 2007 "Deer Creek" 82.464 0.706627 8e-05 0.91 23.80952381 "IntermediateOutmigrant"
 "3" "DC07_01" 2007 "Deer Creek" 149.523 0.706108 0.00012 0.92 25.3968254 "IntermediateOutmigrant"

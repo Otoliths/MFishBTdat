@@ -3,3 +3,4 @@
 bt.hermann.2016 <- read.table("data-raw/bt.hermann.2016.txt",
                                  header = TRUE, stringsAsFactors = FALSE)
 save(bt.hermann.2016, file = "data/bt.hermann.2016.rda", compress = "xz")
+

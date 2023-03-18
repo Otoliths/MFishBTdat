@@ -1,4 +1,4 @@
-"IDCode" "age.years.cap" "age.month.cap" "month.code.cap" "FishID" "Month" "Age" "fMonth" "Growth" "SrCa" "NaCa" "BaCa" "MgCa" "LiCa"
+"id_code" "age_years_cap" "age_month_cap" "month_code_cap" "fish_id" "month" "age" "f_month" "growth" "sr_ca" "na_ca" "ba_ca" "mg_ca" "li_ca"
 "1" "HPS.004" 15 181 253 "HPS.004" 86 14 86 25.668 2968.067806 13073.30774 2.636667052 63.87008295 11.48715018
 "2" "HPS.004" 15 181 253 "HPS.004" 95 23 95 24.134 2932.735548 13943.95833 1.533245756 86.41922456 7.72150598
 "3" "HPS.004" 15 181 253 "HPS.004" 96 24 96 22.156 3175.464182 12526.60865 1.66016418 65.34244057 6.863043087
