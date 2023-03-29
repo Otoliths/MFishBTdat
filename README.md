@@ -43,6 +43,6 @@ If you use these data, please cite both the `MFishBTdat` package (see `citation(
 
 If you think you have found an error in an existing dataset or a bug in the package in general, please go to https://github.com/Otoliths/MFishBTdat/issues and open up a new issue.
 
-## :heart: Thanks
+## :heart: Thank you for the generosity of sharing raw data
 
-[**Shuai Zhang**](zhangshuai@scsfri.ac.cn) South China Sea Fisheries Research Institute, Chinese Academy of Fishery Sciences, China
+- [**Shuai Zhang**]([zhangshuai@scsfri.ac.cn](https://www.researchgate.net/profile/Shuai-Zhang-24) 'South China Sea Fisheries Research Institute, Chinese Academy of Fishery Sciences, China'
