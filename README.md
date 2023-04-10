@@ -4,7 +4,7 @@ In this datapaper we will collect all the available data on bulk elements or iso
 
 Liuyong Ding [ly_ding@126.com], Chengzhi Ding [chzhding@ynu.edu.cn]
 
-##Data collectint will start on April 2021, and the submission is scheduled to June 2023
+##Data collectint will start on April 2022, and the submission is scheduled to June 2023
 
 
 
