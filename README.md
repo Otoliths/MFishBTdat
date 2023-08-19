@@ -10,7 +10,7 @@ Liuyong Ding [ly_ding@126.com], Chengzhi Ding [chzhding@ynu.edu.cn]
 
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-# MFishBTdat <img src="man/figures/Biomineral_archives.png" align="right" height="200" />
+# MFishBTdat <img src="man/figures/Biological_archives.png" align="right" height="200" />
 
 ## Description
 
