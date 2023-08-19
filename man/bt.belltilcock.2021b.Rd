@@ -20,6 +20,8 @@ bt.belltilcock.2021b
 }
 \details{
    It is suggested that otolith d34S can be used to differentiate floodplain and river rearing habitats used by native fishes, such as chinook salmon, across different hydrologic conditions and tissues, and provide a toolset to quantify the role of floodplains as fish habitats.
+
+Instrument: EA-IRMS (elemental analyzer–isotope ratio mass spectrometry)
 }
 \source{Bell-Tilcock, M., Jeffres, C. A., Rypel, A. L., Willmes, M., Armstrong, R. A., Holden, P., ... & Johnson, R. C. (2021). Biogeochemical processes create distinct isotopic fingerprints to track floodplain rearing of juvenile salmon. \emph{PloS One}, \bold{16}(10), e0257444. \verb{https://doi.org/10.1371/journal.pone.0257444}
 
@@ -90,8 +92,8 @@ ggplot(data = dat) +
 }
 \keyword{datasets}
 \concept{otolith}
-\concept{isotopic ratios}
+\concept{stable isotope}
 \concept{d34S}
 \section{Concepts}{
-   otolith, isotopic ratios, d34S
+   otolith, stable isotope, d34S
 }

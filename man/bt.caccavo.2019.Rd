@@ -37,7 +37,15 @@ bt.caccavo.2019
 }
 }
 \details{
-   The dataset contains intensity data from ICP-MS for all samples,MACS-3 standard readings,and blank readings (514 measurements of Antarctic silverfish) .
+   The dataset contains intensity data from ICP-MS for all samples,MACS-3 standard readings,and blank readings (514 measurements of Antarctic silverfish).
+
+Instrument: ICP-MS (inductively coupled plasma mass spectrometry)
+
+Beam diameter: 20um
+
+Scan speed: 6um/s
+
+Reference materials: MACS-3 (United States Geological Survey microanalytical carbonate standard pressed pellet)
 }
 \source{
 Caccavo, J. A., Ashford, J. R., Ryan, S., Papetti, C., Schröder, M., & Zane, L. (2019). Spatial structuring and life history connectivity of Antarctic silverfish along the southern continental shelf of the Weddell Sea. \emph{Marine Ecology Progress Series}, \bold{624}, 195--212. \verb{https://doi.org/10.3354/MEPS13017}
@@ -150,12 +158,12 @@ ggplot(data = dat, aes(status, pb208 / ca48)) +
 }
 \keyword{datasets}
 \concept{otolith}
-\concept{bulk elements}
+\concept{trace element}
 \concept{Sr/Ca}
 \concept{Mn/Ca}
 \concept{Mg/Ca}
 \concept{Ba/Ca}
 \concept{Pb/Ca}
 \section{Concepts}{
-   otolith, bulk elements, Sr/Ca, Mn/Ca, Mg/Ca, Ba/Ca, Pb/Ca
+   otolith, trace element, Sr/Ca, Mn/Ca, Mg/Ca, Ba/Ca, Pb/Ca
 }

@@ -15,13 +15,16 @@ bt.hermann.2016
 \bold{species}     \tab \code{character} \tab species studied \cr
 \bold{distance}    \tab \code{numeric}   \tab distance from fish otolith cores-edge transects (unit: micron)  \cr
 \bold{value}     \tab \code{character}   \tab Laser ablation–inductively coupled plasma mass spectrometry raw value \cr
-\bold{oto_element}     \tab \code{character}   \tab bulk elements: Ba, Sr, Ca, Mn \cr
+\bold{oto_element}     \tab \code{character}   \tab trace element: Ba, Sr, Ca, Mn \cr
 \bold{locality}     \tab \code{character}   \tab locality of captured
 }
 }
 \details{
    Laser ablation–inductively coupled plasma mass spectrometry raw data (background- and drift-corrected) for \emph{Brachyplatystoma rousseauxii} (Ecuador and Colombia), \emph{Brachyplatystoma filamentosum} (Colombia), and six \emph{Prochilodus nigricans}. Data include Ca, Sr, and Ba for both Brachyplatystoma species and localities, and Ca, Ba, and Mn for all six \emph{P. nigricans}.
+
+Instrument: LA-ICP-MS (laser ablation-inductively coupled plasma mass spectrometry);SXFM (scanning x-ray fluorescence imaging)
 }
+
 \source{
 
 Hermann, T. W., Stewart, D. J., Limburg, K. E., & Castello, L. (2016). Unravelling the life history of Amazonian fishes through otolith microchemistry. \emph{Royal Society open science}, \bold{3}(6), 160206. \verb{http://dx.doi.org/10.1098/rsos.160206}
@@ -41,7 +44,7 @@ tibble::tibble(dat)
 table(dat$species)
 
 \dontrun{
-### bulk elements profile figure
+### trace element profile figure
 library(dplyr)
 library(tidyr)
 library(ggplot2)
@@ -95,10 +98,10 @@ B_rousseauxii |>
 }
 \keyword{datasets}
 \concept{otolith}
-\concept{bulk elements}
+\concept{trace element}
 \concept{Sr/Ca}
 \concept{Mn/Ca}
 \concept{Ba/Ca}
 \section{Concepts}{
-   otolith, bulk elements, Sr/Ca, Mn/Ca, Ba/Ca
+   otolith, trace element, Sr/Ca, Mn/Ca, Ba/Ca
 }

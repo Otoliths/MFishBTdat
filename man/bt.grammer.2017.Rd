@@ -28,6 +28,13 @@ bt.grammer.2017
 \details{
 Value of the Element:Ca ratio for that discrete monthly time period (μmol/mol) extracted from the laser ablation ICP-MS data.
 
+Instrument: Q-ICP-MS (quadrupole inductively coupled plasma mass spectrometry)
+
+Beam diameter: 33um
+
+Scan speed: 4um/s
+
+Reference materials: NIST-612 (National Institutes of Standards and Technology glass standard) and MACS-3 (United States Geological Survey microanalytical carbonate standard pressed pellet)
 }
 \source{
 
@@ -145,12 +152,12 @@ ggplot(data = dat, aes(age, growth)) +
 }
 \keyword{datasets}
 \concept{otolith}
-\concept{bulk elements}
+\concept{trace element}
 \concept{Sr/Ca}
 \concept{Na/Ca}
 \concept{Ba/Ca}
 \concept{Mg/Ca}
 \concept{Li/Ca}
 \section{Concepts}{
-   otolith, bulk elements, Sr/Ca, Na/Ca, Ba/Ca, Mg/Ca, Li/Ca
+   otolith, trace element, Sr/Ca, Na/Ca, Ba/Ca, Mg/Ca, Li/Ca
 }

@@ -11,9 +11,9 @@ bt.hauser.2020
 \bold{fish_id}  \tab \code{integer} \tab fish identifier \cr
 \bold{real_distance}  \tab \code{numeric} \tab real distance from otolith core \cr
 \bold{normalized_distance}  \tab \code{numeric} \tab normalized distance from otolith core \cr
-\bold{value}  \tab \code{numeric} \tab biogeochemical value (x1000 in bulk elements; ‰ in isotopic ratios) \cr
+\bold{value}  \tab \code{numeric} \tab biogeochemical value (x1000 in trace element; ‰ in stable isotope) \cr
 \bold{elements}  \tab \code{character} \tab se/ca, sr/ca, sr8786 \cr
-\bold{biogeochemical_tags}  \tab \code{character} \tab bulk elements and isotopic ratios \cr
+\bold{biogeochemical_tags}  \tab \code{character} \tab trace element and stable isotope \cr
 \bold{basin}  \tab \code{character} \tab basin of capture \cr
 \bold{river}  \tab \code{character} \tab river of capture \cr
 \bold{country}  \tab \code{character} \tab country of capture \cr
@@ -28,6 +28,8 @@ bt.hauser.2020
 }
 \details{
    This dataset contains seven \emph{Brachyplatystoma rousseauxii} for the Sr:Ca, Se:Ca, and 87Sr:86Sr profiles.
+
+Instrument: SXFM (scanning x-ray fluorescence imaging), LA-MC-ICP-MS (laser ablation multi-collector inductively coupled plasma mass spectrometry)
 }
 \source{
 
@@ -99,11 +101,11 @@ ggplot(data = dat[which(dat$elements == "Sr8786"), ], aes(normalized_distance, v
 }
 \keyword{datasets}
 \concept{otolith}
-\concept{bulk elements}
-\concept{isotopic ratios}
+\concept{trace element}
+\concept{stable isotope}
 \concept{Sr/Ca}
 \concept{Se/Ca}
 \concept{Sr8786}
 \section{Concepts}{
-   otolith, bulk elements, isotopic ratios, Sr/Ca, Se/Ca, Sr8786
+   otolith, trace element, stable isotope, Sr/Ca, Se/Ca, Sr8786
 }

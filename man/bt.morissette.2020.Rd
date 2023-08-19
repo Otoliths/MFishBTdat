@@ -31,6 +31,8 @@ bt.morissette.2020
 }
 \details{
    The dataset contains otolith d18O thermometry within supplemented lake trout (\emph{Salvelinus namaycush}) populations.
+
+Instrument: SIMS (secondary ion mass spectrometer)
 }
 \source{
 Morissette, O., Bernatchez, L., Wiedenbeck, M., & Sirois, P. (2020). Deciphering lifelong thermal niche using otolith δ18O thermometry within supplemented lake trout (Salvelinus namaycush) populations. \emph{Freshwater Biology}, \bold{65}(6), 1114-1127. \verb{https://doi.org/10.1111/fwb.13497}
@@ -72,8 +74,8 @@ ggplot(data = dat,aes(distance_oto, corrected_d18ovpdb_oto))+
 }
 \keyword{datasets}
 \concept{otolith}
-\concept{isotopic ratios}
+\concept{stable isotope}
 \concept{d18O}
 \section{Concepts}{
-   otolith, isotopic ratios, d18O
+   otolith, stable isotope, d18O
 }

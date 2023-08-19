@@ -8,14 +8,14 @@ bt.matsubayashi.2017
 }
 \format{The data frame 86 × 8 contains the following columns:
 \tabular{lll}{
-\bold{fish_samples}  \tab \code{character} \tab fish sample id \cr
+\bold{fish_samples}  \tab \code{character} \tab fish sample identifier \cr
 \bold{biomineral_archives}  \tab \code{character} \tab biomineral archives (vertebra and otolith) \cr
 \bold{biogeochemical_tags}  \tab \code{character} \tab biogeochemical tags \cr
 \bold{element_ratio}  \tab \code{character} \tab element ratio \cr
 \bold{section}  \tab \code{character} \tab biomineral archives of fish equally into sections \cr
-\bold{distance}     \tab \code{numeric}   \tab distance of from biomineral archives core to edge \cr
-\bold{mean_values}     \tab \code{numeric}   \tab mean values (ug/mg in bulk elements; permil in isotopic ratios)\cr
-\bold{sd}     \tab \code{numeric}   \tab standard deviation (ug/mg in bulk elements; permil in isotopic ratios)
+\bold{distance}     \tab \code{numeric}   \tab distance from biomineral archives core to edge \cr
+\bold{mean_values}     \tab \code{numeric}   \tab mean values (ug/mg in trace element; permil in stable isotope)\cr
+\bold{sd}     \tab \code{numeric}   \tab standard deviation (ug/mg in trace element; permil in stable isotope)
 }
 }
 \details{
@@ -23,6 +23,9 @@ Sulfur stable isotope ratios of vertebral sections of masu salmon. Each vertebra
 
 Elemental and 87Sr/86Sr analyses of fish otolith sections from masu salmon (identified as OM-01, OM-02 and OM-03) collected from the Churui River.
 
+Instrument: TIMS (thermal ionization mass spectrometry);Q-ICP-MS (quadrupole inductively coupled plasma mass spectrometry); IRMS (isotope ratio mass spectrometer)
+
+Reference materials: NIST987 (National Institutes of Standards and Technology), XSTC-622 (SPEX SertiPrep, Metuchen, New Jersey, USA) and IAEA-S-1, IAEA-S-2 (International Atomic Energy Agency standards)
 }
 \source{
 
@@ -110,11 +113,11 @@ dat[which(dat$element_ratio == "Sr/Ca"), ] |>
 \keyword{datasets}
 \concept{otolith}
 \concept{vertebra}
-\concept{bulk elements}
-\concept{isotopic ratios}
+\concept{trace element}
+\concept{stable isotope}
 \concept{Sr8786}
 \concept{Sr/Ca}
 \concept{d34S}
 \section{Concepts}{
-   otolith, vertebra, bulk elements, isotopic ratios, Sr8786, Sr/Ca, d34S
+   otolith, vertebra, trace element, stable isotope, Sr8786, Sr/Ca, d34S
 }

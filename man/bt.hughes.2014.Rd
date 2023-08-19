@@ -17,6 +17,9 @@ bt.hughes.2014
 \details{
 The datasets contains Strontium isotope ratio data for each individual fish. The authors use otolith chemistry to distinguish between diadromous and nondiadromous life histories and population genetics to examine interbasin connectivity resulting from diadromy. Otolith strontium isotope (87Sr/86Sr) transects identified three main life history patterns: amphidromy, freshwater residency and estuarine/marine residency.
 
+Instrument: LA-ICP-MS (laser ablation-inductively coupled plasma mass spectrometry)
+
+Reference materials: NIST-610,NIST-612 (National Institutes of Standards and Technology glass standard) and MACS-3 (United States Geological Survey microanalytical carbonate standard pressed pellet)
 }
 \source{
 
@@ -64,8 +67,8 @@ ggplot(data = dat,aes(distance, oto_sr8786))+
 }
 \keyword{datasets}
 \concept{otolith}
-\concept{isotopic ratios}
+\concept{stable isotope}
 \concept{Sr8786}
 \section{Concepts}{
-   otolith, isotopic ratios, Sr8786
+   otolith, stable isotope, Sr8786
 }

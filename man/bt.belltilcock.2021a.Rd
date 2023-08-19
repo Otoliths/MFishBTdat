@@ -25,6 +25,9 @@ bt.belltilcock.2021a
 }
 \details{
    Bulk eye-lens stable isotope (d13C, d15N and d34S) used to reconstruct habitat use in an adult Chinook Salmon and a juvenile Chinook Salmon that had reared for 39 days on the floodplain.
+
+Instrument: IRMS (isotope ratio mass spectrometer)
+
 }
 \source{
 
@@ -43,7 +46,6 @@ dat <- bt.belltilcock.2021a
 tibble::tibble(dat)
 
 \dontrun{
-### sulfur profile figure
 library(dplyr)
 library(ggplot2)
 library(tidyr)
@@ -88,10 +90,10 @@ dat[which(dat$life_history == "Juvenile"),] |>
 }
 \keyword{datasets}
 \concept{eye lenses}
-\concept{isotopic ratios}
+\concept{stable isotope}
 \concept{d13C}
 \concept{d15N}
 \concept{d34S}
 \section{Concepts}{
-   eye lenses, isotopic ratios, d13C, d15N, d34S
+   eye lenses, stable isotope, d13C, d15N, d34S
 }

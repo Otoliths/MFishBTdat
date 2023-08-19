@@ -20,6 +20,14 @@ bt.chalifour.2021
 }
 \details{
 Sr:Ca at the otolith edge increases, and Ba:Ca at the otolith edge decreases with increasing residency in the estuary. This suggests that tidal fluctuations in the estuary and an ontogenetic shift outward towards more saline habitats influence otolith microchemistry over time as the fish reside in this estuarine environment.
+
+Instrument: LA-ICP-MS (laser ablation-inductively coupled plasma mass spectrometry)
+
+Beam diameter: 30um
+
+Scan speed: 5um/s
+
+Reference materials: NIST611, NIST613, NIST615 (National Institutes of Standards and Technology glass standard)
 }
 \source{
 Chalifour, L., Scott, D. C., MacDuffee, M., Stark, S., Dower, J. F., Beacham, T. D., ... & Baum, J. K. (2021). Chinook salmon exhibit long-term rearing and early marine growth in the Fraser River, British Columbia, a large urban estuary. \emph{Canadian Journal of Fisheries and Aquatic Sciences}, \bold{78}(5), 539-550. \verb{https://doi.org/10.1139/cjfas-2020-0247}
@@ -75,9 +83,9 @@ ggplot(data = dat, aes(sr_edge, ba_edge)) +
 }
 \keyword{datasets}
 \concept{otolith}
-\concept{bulk elements}
+\concept{trace element}
 \concept{Sr/Ca}
 \concept{Ba/Ca}
 \section{Concepts}{
-   otolith, bulk elements, Sr/Ca, Ba/Ca
+   otolith, trace element, Sr/Ca, Ba/Ca
 }

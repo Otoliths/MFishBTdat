@@ -25,13 +25,20 @@ bt.saboret.2019
 \bold{baadult}     \tab \code{numeric}   \tab ba/ca (mmol.mol^(-1)) of otolith edge (adult environment) \cr
 \bold{increment1}     \tab \code{numeric}   \tab distance from the otolith core to the metamorphosis check (mm) \cr
 \bold{increment2_4}     \tab \code{numeric}   \tab distance from otolith annulus i-1 to annulus i (mm) \cr
-\bold{otolithradius}     \tab \code{numeric}   \tab total distance from the otolith core to the edge (mm), measured independently \cr
+\bold{otolithradius}     \tab \code{numeric}   \tab distance from the otolith core to the edge (mm), measured independently \cr
 \bold{age}     \tab \code{integer}   \tab estimated age based on annuli numbers \cr
 }
 }
 \details{
    The dataset contains otolith microchemistry of common bullies (\emph{Gobiomorphus cotidianus}) collected on February 12-13 2018 in lake Waipori system, South Island, New Zealand. NA indicates missing data.
+
+Instrument: Q-ICP-MS (quadrupole inductively coupled plasma mass spectrometry);IRMS (isotope ratio mass spectrometer)
+
+Beam diameter: 90um
+
+Reference materials: NIST-610,NIST-612 (National Institutes of Standards and Technology glass standard) and MACS-3 (United States Geological Survey microanalytical carbonate standard pressed pellet)
 }
+
 \source{
 
 Saboret, G., & Ingram, T. (2019). Carryover effects of larval environment on individual variation in a facultatively diadromous fish. \emph{Ecology and Evolution}, \bold{9}(18), 10630-10643. \verb{https://doi.org/10.1002/ece3.5582}
@@ -62,10 +69,10 @@ dat[, c(1, 3, 12, 14)] |> pivot_longer(
   names_to = "life_history",
   values_to = "sr_ca"
 ) -> dat1
-dat1$life_history <- ifelse(dat1$life_history == "Sradult", "Otolith edge", "Otolith core")
+dat1$life_history <- ifelse(dat1$life_history == "sradult", "Otolith edge", "Otolith core")
 ggplot(data = dat1, aes(life_history, sr_ca)) +
-  geom_boxplot(aes(col = Sex), show.legend = F, na.rm = T) +
-  facet_grid(. ~ Sex) +
+  geom_boxplot(aes(col = sex), show.legend = F, na.rm = T) +
+  facet_grid(. ~ sex) +
   ylab("Sr/Ca (mmol.mol^(-1))") +
   xlab("") +
   theme_bw() +
@@ -99,9 +106,9 @@ ggplot(data = dat2, aes(life_history, ba_ca)) +
 }
 \keyword{datasets}
 \concept{otolith}
-\concept{bulk elements}
+\concept{trace element}
 \concept{Sr/Ca}
 \concept{Ba/Ca}
 \section{Concepts}{
-   otolith, bulk elements, Sr/Ca, Ba/Ca
+   otolith, trace element, Sr/Ca, Ba/Ca
 }

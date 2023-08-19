@@ -23,6 +23,8 @@ bt.sturrock.2015
 }
 \details{
    The dataset contains 87Sr/86Sr values measured in the otoliths of adult chinook salmon sampled in the Stanislaus River, California, between 2001 and 2006. Fish age was estimated using scale annuli, and individuals that outmigrated in 2000 and 2003 were retained for the current analysis (see "outmigration year"). Each otolith contains multiple 87Sr/86Sr values, representing spot analyses sampled along a standardized 90° transect from the otolith core towards the otolith edge.
+
+Instrument: LA-MC-ICP-MS (laser ablation multi-collector inductively coupled plasma mass spectrometry)
 }
 \source{
 Sturrock, A. M., Wikert, J. D., Heyne, T., Mesick, C., Hubbard, A. E., Hinkelman, T. M., ... & Johnson, R. C. (2015). Reconstructing the migratory behavior and long-term survivorship of juvenile Chinook salmon under contrasting hydrologic regimes. \emph{PLoS One}, \bold{10}(5), e0122380. \verb{https://doi.org/10.1371/journal.pone.0122380}
@@ -69,8 +71,8 @@ ggplot(data = dat,aes(distance, oto_sr8786))+
 }
 \keyword{datasets}
 \concept{otolith}
-\concept{isotopic ratios}
+\concept{stable isotope}
 \concept{Sr8786}
 \section{Concepts}{
-   otolith, isotopic ratios, Sr8786
+   otolith, stable isotope, Sr8786
 }

@@ -17,6 +17,14 @@ bt.duponchelle.2016
 }
 \details{
    This dataset contains 110 \emph{Brachyplatystoma rousseauxii} for otolith 87Sr:86Sr profiles.
+
+Instrument: fs-LA-MC-ICP-MS (femtosecond laser ablation multi-collector inductively coupled plasma mass spectrometer)
+
+Beam diameter: 30um
+
+Scan speed: 5um/s
+
+Reference materials: NIES22 (National Institute for Environmental Studies, Environment Agency of Japan, Tsukuba-City, Ibaraki, Japan)
 }
 \source{
 #Duponchelle, F., Pouilly, M., Pécheyran, C., Hauser, M., Renno, J. F., Panfili, J., ... & Baras, E. (2016). Trans-mazonian natal homing in giant catfish. \emph{Journal of Applied Ecology}, \bold{53}(5), 1511-1520. \verb{https://doi.org/10.1111/1365-2664.12665}
@@ -58,11 +66,11 @@ ggplot(data = dat, aes(distance, sr8786)) +
 }
 \keyword{datasets}
 \concept{otolith}
-\concept{bulk elements}
-\concept{isotopic ratios}
+\concept{trace element}
+\concept{stable isotope}
 \concept{Sr/Ca}
 \concept{Se/Ca}
 \concept{Sr8786}
 \section{Concepts}{
-   otolith, bulk elements, isotopic ratios, Sr/Ca, Se/Ca, Sr8786
+   otolith, trace element, stable isotope, Sr/Ca, Se/Ca, Sr8786
 }

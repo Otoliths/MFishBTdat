@@ -25,6 +25,8 @@ bt.sturrock.2020
 }
 \details{
    The dataset contains natal otolith Sr87/Sr86 values was used to predict provenance of the spawning adults using the methods described in (Barnett-Johnson et al. 2008, Sturrock et al. 2015).
+
+Instrument: LA-ICP-MS (laser ablation-inductively coupled plasma mass spectrometry)
 }
 \source{
 
@@ -77,8 +79,8 @@ ggplot(data = dat,aes(otolith_radius_um, otolith_87Sr86Sr))+
 }
 \keyword{datasets}
 \concept{otolith}
-\concept{isotopic ratios}
+\concept{stable isotope}
 \concept{Sr8786}
 \section{Concepts}{
-   otolith, isotopic ratios, Sr8786
+   otolith, stable isotope, Sr8786
 }

@@ -22,11 +22,19 @@ O(FLAGGED transect that failed to go through the core and may or may not be comp
 \cr
 \bold{inferred_migration_pattern}  \tab \code{character} \tab inferred migration pattern \cr
 \bold{distance}  \tab \code{integer} \tab relative transect distance (5um) \cr
-\bold{sr_ca}  \tab \code{numeric} \tab otoloth sr:ca (mmol/mol)
+\bold{sr_ca}  \tab \code{numeric} \tab otolith sr:ca (mmol/mol)
 }
 }
 \details{
    This study was to document migratory life histories of native galaxiids and introduced salmonids from a wide latitudinal range in Chilean Patagonia (39–48°S). Otolith microchemistry data were analysed using a recursive partitioning approach to test for diadromy in Patagonian river fishes.
+
+Instrument: LA-ICP-MS (laser ablation-inductively coupled plasma mass spectrometry)
+
+Beam diameter: 50um
+
+Scan speed: 5um/s
+
+Reference materials: FEBS-1 (National Research Council Canada, Institute for National Measurement Standards Ottawa, ON, Canada)
 }
 \source{
 
@@ -49,7 +57,6 @@ tibble::tibble(dat)
 library(dplyr)
 library(ggplot2)
 
-
 ### otolith sr/ca
 ggplot(data = dat, aes(distance, sr_ca)) +
   geom_line(aes(colour = species, group = fish_id), show.legend = F, na.rm = T) +
@@ -67,8 +74,8 @@ ggplot(data = dat, aes(distance, sr_ca)) +
 }
 \keyword{datasets}
 \concept{otolith}
-\concept{bulk elements}
+\concept{trace element}
 \concept{Sr/Ca}
 \section{Concepts}{
-   otolith, bulk elements, Sr/Ca
+   otolith, trace element, Sr/Ca
 }

@@ -20,6 +20,8 @@ bt.sakamoto.2022
 \details{
    Stable carbon and oxygen isotope ratios of powders extracted from otoliths of JP and CA sardines by micromilling them. The d13C and d18O values were reported in delta-notation relative to the Vienna Pee Dee Belemnite (VPDB) scale and are given as a permil value. Analytical precisions were better than 0.10 permil and 0.17 permil for d18O, and better than 0.10 permil and 0.15 permil for d13C, respectively. The acid fractionation factor of calcite was used. Because the difference between the acid fractionation factor of calcite and aragonite is temperature dependent, 0.09 permil was subtracted from the d18O value
 determined by DELTA V to adjust for the different response temperatures.
+
+Instrument: IRMS (isotope ratio mass spectrometer)
 }
 \source{
 Sakamoto, T., Takahashi, M., Chung, M. T., Rykaczewski, R. R., Komatsu, K., Shirai, K., ... & Higuchi, T. (2022). Contrasting life-history responses to climate variability in eastern and western North Pacific sardine populations. \emph{Nature Communications}, \bold{13}(1), 5298. \verb{https://doi.org/10.1038/s41467-022-33019-z}
@@ -77,9 +79,9 @@ ggplot(data = dat,aes(age_range, d18o))+
 }
 \keyword{datasets}
 \concept{otolith}
-\concept{isotopic ratios}
+\concept{stable isotope}
 \concept{d13C}
 \concept{d18O}
 \section{Concepts}{
-   otolith, isotopic ratios, d13C, d18O
+   otolith, stable isotope, d13C, d18O
 }

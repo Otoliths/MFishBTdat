@@ -27,7 +27,15 @@ bt.hill.2020
 }
 }
 \details{
-   The dataset contains contains the raw chemistry data (results of LA-ICP-MS) for all 289 Hickory Shad (\emph{Alosa mediocris}) .
+   The dataset contains contains the raw chemistry data (results of LA-ICP-MS) for all 289 Hickory Shad (\emph{Alosa mediocris}).
+
+Instrument: LA-ICP-MS (laser ablation-inductively coupled plasma mass spectrometry)
+
+Beam diameter: 30um
+
+Scan speed: 2-5um/s
+
+Reference materials: NIST-610 (National Institutes of Standards and Technology glass standard)
 }
 \source{
 Hill, C. R., Rulifson, R. A., & Halden, N. M. (2022). A quantitative approach to investigate natal philopatry in Hickory Shad (\emph{Alosa mediocris}) using otolith chemistry. \emph{Fisheries Research}, 249, 106232. \verb{https://doi.org/10.1016/j.fishres.2022.106232}
@@ -137,7 +145,7 @@ ggplot(data = dat, aes(distance, pb_ca)) +
 }
 \keyword{datasets}
 \concept{otolith}
-\concept{bulk elements}
+\concept{trace element}
 \concept{Sr/Ca}
 \concept{Mn/Ca}
 \concept{Mg/Ca}
@@ -145,5 +153,5 @@ ggplot(data = dat, aes(distance, pb_ca)) +
 \concept{Pb/Ca}
 \concept{Cu/Ca}
 \section{Concepts}{
-   otolith, bulk elements, Sr/Ca, Mn/Ca, Mg/Ca, Ba/Ca, Pb/Ca, Cu/Ca
+   otolith, trace element, Sr/Ca, Mn/Ca, Mg/Ca, Ba/Ca, Pb/Ca, Cu/Ca
 }

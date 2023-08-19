@@ -20,12 +20,12 @@ bt.cordoleani.2021
 }
 }
 \details{
-   The dataset contains chinook salmon otolith strontium isotope profiles. Otolith isotope profiles revealed three distinct juvenile life history types (referred to as 'early', 'intermediate' and 'late' migrants).
+The dataset contains chinook salmon otolith strontium isotope profiles. Otolith isotope profiles revealed three distinct juvenile life history types (referred to as 'early', 'intermediate' and 'late' migrants).
 
-   In threatened spring-run chinook salmon spawning at the southern edge of the species range,
-this study found that late-migrating juveniles are critical to cohort success in years characterized by droughts and ocean heatwaves. Late
-migrants rely on cool river temperatures over summer, increasingly rare due to the combined effects of warming and impassable
+In threatened spring-run chinook salmon spawning at the southern edge of the species range, this study found that late-migrating juveniles are critical to cohort success in years characterized by droughts and ocean heatwaves. Late migrants rely on cool river temperatures over summer, increasingly rare due to the combined effects of warming and impassable
 dams.
+
+Instrument: LA-ICP-MS (laser ablation-inductively coupled plasma mass spectrometry)
 }
 \source{
    Cordoleani, F., Phillis, C. C., Sturrock, A. M., FitzGerald, A. M., Malkassian, A., Whitman, G. E., ... & Johnson, R. C. (2021). Threatened salmon rely on a rare life history strategy in a warming landscape. \emph{Nature Climate Change}, \bold{11}(11), 982--988. \verb{https://doi.org/10.1038/s41558-021-01186-4}
@@ -73,8 +73,8 @@ ggplot(data = dat,aes(distance, oto_sr))+
 }
 \keyword{datasets}
 \concept{otolith}
-\concept{isotopic ratios}
+\concept{stable isotope}
 \concept{Sr8786}
 \section{Concepts}{
-   otolith, isotopic ratios, Sr8786
+   otolith, stable isotope, Sr8786
 }

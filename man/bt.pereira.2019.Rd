@@ -21,6 +21,10 @@ bt.pereira.2019
    The dataset contains wild and farmed commercialized pirarucu (\emph{Arapaima spp.}) otolith strontium isotope profiles. Variation of 87Sr/86Sr values measured by LAfs-MC-ICPMS on wild fish otolith cores – edge transects.
 
    Wild fish specimens that lived in environments with the largest fluctuation of river water Sr isotope ratios over time presented the largest Sr isotope variations in otoliths.
+
+Instrument: fs-LA-MC-ICP-MS (femtosecond laser ablation multi-collector inductively coupled plasma mass spectrometer)
+
+Scan speed: 5um/s
 }
 \source{
  Pereira, L. A., Santos, R. V., Hauser, M., Duponchelle, F., Carvajal, F., Pecheyran, C., ... & Pouilly, M. (2019). Commercial traceability of Arapaima spp. fisheries in the Amazon basin: can biogeochemical tags be useful?. \emph{Biogeosciences}, \bold{16}(8), 1781--1797. \verb{https://doi.org/10.5194/bg-16-1-2019}
@@ -69,8 +73,8 @@ ggplot(data = dat,aes(distance, oto_sr8786))+
 }
 \keyword{datasets}
 \concept{otolith}
-\concept{isotopic ratios}
+\concept{stable isotope}
 \concept{Sr8786}
 \section{Concepts}{
-   otolith, isotopic ratios, Sr8786
+   otolith, stable isotope, Sr8786
 }

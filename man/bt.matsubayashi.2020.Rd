@@ -23,6 +23,7 @@ bt.matsubayashi.2020
 \details{
 Specimen IDs and a summary of stable carbon and nitrogen isotope results from the vertebral sections of 8 chum salmon.
 
+Instrument: IRMS (isotope ratio mass spectrometer)
 }
 \source{
 Matsubayashi, J., Osada, Y., Tadokoro, K., Abe, Y., Yamaguchi, A., Shirai, K., ... & Tayasu, I. (2020). Tracking long-distance migration of marine fishes using compound-specific stable isotope analysis of amino acids. \emph{Ecology Letters}, \bold{23}(5), 881--890. \verb{https://doi.org/10.1111/ele.13496}
@@ -83,9 +84,9 @@ ggplot(data = dat, aes(section_no, d15n)) +
 }
 \keyword{datasets}
 \concept{vertebra}
-\concept{isotopic ratios}
+\concept{stable isotope}
 \concept{d13C}
 \concept{d15N}
 \section{Concepts}{
-   vertebra, isotopic ratios, d13C, d15N
+   vertebra, stable isotope, d13C, d15N
 }
