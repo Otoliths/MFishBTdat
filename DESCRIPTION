@@ -1,5 +1,5 @@
 Package: MFishBTdat
-Date: 2023-03-09
+Date: 2023-08-20
 Title: Biomineral Archives Datasets of Migratory Fish
 Version: 0.1.0
 Authors@R: c(
@@ -21,3 +21,4 @@ Encoding: UTF-8
 LazyDataCompression: xz
 LazyData: True
 ByteCompile: TRUE
+RoxygenNote: 7.2.3

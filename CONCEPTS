@@ -13,7 +13,7 @@ biogeochemical tags:
 
 ############################################################################
 
-biomineral archives/structures:
+biological archives/structures:
 
 \concept{otolith}
 \concept{scale}
@@ -22,7 +22,7 @@ biomineral archives/structures:
 
 ############################################################################
 
-microchemical/isotopic elements:
+trace element/ stable isotope:
 
 \concept{d34S}
 \concept{d13C}
