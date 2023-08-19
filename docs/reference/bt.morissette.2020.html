@@ -109,7 +109,7 @@
     </div>
     <div id="concepts">
     <h2>Concepts</h2>
-    <p>otolith, isotopic ratios, d18O</p>
+    <p>otolith, stable isotope, d18O</p>
     </div>
 
     <div id="ref-examples">
@@ -118,21 +118,21 @@
 <span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">bt.morissette.2020</span></span></span>
 <span class="r-in"><span><span class="fu">tibble</span><span class="fu">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html" class="external-link">tibble</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 375 × 18</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    id         lake  stock…¹ ecotype sex   matur…² origin analy…³ mater…⁴ date  d18ov…⁵ d18ov…⁶ corre…⁷ dista…⁸</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> Louisa201… loui… O       P       fema… immatu… L      A-0@1   LOU-02  17-1…    21.9   -<span style="color: #BB0000;">8.70</span>   -<span style="color: #BB0000;">7.70</span>      0 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> Louisa201… loui… O       P       fema… immatu… L      A-0@2   LOU-02  17-1…    23.6   -<span style="color: #BB0000;">7.14</span>   -<span style="color: #BB0000;">6.14</span>    106.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> Louisa201… loui… O       P       fema… immatu… L      A-0@3   LOU-02  17-1…    21.3   -<span style="color: #BB0000;">9.32</span>   -<span style="color: #BB0000;">8.32</span>    211.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> Louisa201… loui… O       P       fema… immatu… L      A-0@4   LOU-02  17-1…    21.3   -<span style="color: #BB0000;">9.35</span>   -<span style="color: #BB0000;">8.35</span>    317.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> Louisa201… loui… O       P       fema… immatu… L      A-0@5   LOU-02  17-1…    22.2   -<span style="color: #BB0000;">8.46</span>   -<span style="color: #BB0000;">7.46</span>    423.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> Louisa201… loui… O       P       fema… immatu… L      A-0@6   LOU-02  17-1…    23.1   -<span style="color: #BB0000;">7.58</span>   -<span style="color: #BB0000;">6.58</span>    528.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> Louisa201… loui… O       P       fema… immatu… L      A-0@7   LOU-02  17-1…    21.9   -<span style="color: #BB0000;">8.73</span>   -<span style="color: #BB0000;">7.73</span>    634.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> Louisa201… loui… O       P       fema… immatu… L      A-0@8   LOU-02  17-1…    22.6   -<span style="color: #BB0000;">8.05</span>   -<span style="color: #BB0000;">7.05</span>    740.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> Louisa201… loui… O       P       fema… immatu… L      A-0@9   LOU-02  17-1…    22.6   -<span style="color: #BB0000;">8.03</span>   -<span style="color: #BB0000;">7.03</span>    846.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> Louisa201… loui… O       P       fema… immatu… L      A-1@0   LOU-02  17-1…    22.4   -<span style="color: #BB0000;">8.31</span>   -<span style="color: #BB0000;">7.31</span>    951.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 365 more rows, 4 more variables: age &lt;dbl&gt;, age_int &lt;int&gt;, tl &lt;int&gt;, weight &lt;int&gt;, and abbreviated</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   variable names ¹​stocking, ²​maturity, ³​analysis, ⁴​material, ⁵​d18ovsmow_oto, ⁶​d18ovpdb_oto,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   ⁷​corrected_d18ovpdb_oto, ⁸​distance_oto</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    id              lake   stocking ecotype sex   maturity origin analysis material date  d18ovsmow_oto</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> Louisa2012-02SD louisa O        P       fema… immature L      A-0@1    LOU-02   17-1…          21.9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> Louisa2012-02SD louisa O        P       fema… immature L      A-0@2    LOU-02   17-1…          23.6</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> Louisa2012-02SD louisa O        P       fema… immature L      A-0@3    LOU-02   17-1…          21.3</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> Louisa2012-02SD louisa O        P       fema… immature L      A-0@4    LOU-02   17-1…          21.3</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> Louisa2012-02SD louisa O        P       fema… immature L      A-0@5    LOU-02   17-1…          22.2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> Louisa2012-02SD louisa O        P       fema… immature L      A-0@6    LOU-02   17-1…          23.1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> Louisa2012-02SD louisa O        P       fema… immature L      A-0@7    LOU-02   17-1…          21.9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> Louisa2012-02SD louisa O        P       fema… immature L      A-0@8    LOU-02   17-1…          22.6</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> Louisa2012-02SD louisa O        P       fema… immature L      A-0@9    LOU-02   17-1…          22.6</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> Louisa2012-02SD louisa O        P       fema… immature L      A-1@0    LOU-02   17-1…          22.4</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 365 more rows</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 7 more variables: d18ovpdb_oto &lt;dbl&gt;, corrected_d18ovpdb_oto &lt;dbl&gt;, distance_oto &lt;dbl&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   age &lt;dbl&gt;, age_int &lt;int&gt;, tl &lt;int&gt;, weight &lt;int&gt;</span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span></span>
 <span class="r-in"><span><span class="co">### loading packages</span></span></span>
@@ -169,7 +169,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

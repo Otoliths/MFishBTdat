@@ -114,7 +114,7 @@
     </div>
     <div id="concepts">
     <h2>Concepts</h2>
-    <p>otolith, bulk elements, Sr/Ca, Na/Ca, Ba/Ca, Mg/Ca, Li/Ca</p>
+    <p>otolith, trace element, Sr/Ca, Na/Ca, Ba/Ca, Mg/Ca, Li/Ca</p>
     </div>
 
     <div id="ref-examples">
@@ -123,19 +123,20 @@
 <span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">bt.grammer.2017</span></span></span>
 <span class="r-in"><span><span class="fu">tibble</span><span class="fu">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html" class="external-link">tibble</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 2,688 × 14</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    id_code age_years_cap age_month…¹ month…² fish_id month   age f_month growth sr_ca  na_ca ba_ca mg_ca li_ca</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> HPS.004            15         181     253 HPS.004    86    14      86   25.7 <span style="text-decoration: underline;">2</span>968. <span style="text-decoration: underline;">13</span>073.  2.64  63.9 11.5 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> HPS.004            15         181     253 HPS.004    95    23      95   24.1 <span style="text-decoration: underline;">2</span>933. <span style="text-decoration: underline;">13</span>944.  1.53  86.4  7.72</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> HPS.004            15         181     253 HPS.004    96    24      96   22.2 <span style="text-decoration: underline;">3</span>175. <span style="text-decoration: underline;">12</span>527.  1.66  65.3  6.86</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> HPS.004            15         181     253 HPS.004    97    25      97   21.4 <span style="text-decoration: underline;">3</span>268. <span style="text-decoration: underline;">11</span>409.  1.52  49.7  6.52</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> HPS.004            15         181     253 HPS.004    98    26      98   17.6 <span style="text-decoration: underline;">3</span>338. <span style="text-decoration: underline;">11</span>384.  1.53  44.9  6.13</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> HPS.004            15         181     253 HPS.004    99    27      99   17.5 <span style="text-decoration: underline;">3</span>299. <span style="text-decoration: underline;">11</span>993.  1.34  43.4  7.93</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> HPS.004            15         181     253 HPS.004   100    28     100   15.6 <span style="text-decoration: underline;">2</span>888. <span style="text-decoration: underline;">11</span>756.  1.16  43.1  7.90</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> HPS.004            15         181     253 HPS.004   101    29     101   14.8 <span style="text-decoration: underline;">2</span>892. <span style="text-decoration: underline;">12</span>946.  1.14  53.9  6.87</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> HPS.004            15         181     253 HPS.004   102    30     102   14.8 <span style="text-decoration: underline;">2</span>852. <span style="text-decoration: underline;">13</span>550.  1.14  52.7  6.82</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> HPS.004            15         181     253 HPS.004   103    31     103   14.0 <span style="text-decoration: underline;">2</span>829. <span style="text-decoration: underline;">13</span>177.  1.13  49.8  7.11</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 2,678 more rows, and abbreviated variable names ¹​age_month_cap, ²​month_code_cap</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    id_code age_years_cap age_month_cap month_code_cap fish_id month   age f_month growth sr_ca  na_ca</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> HPS.004            15           181            253 HPS.004    86    14      86   25.7 <span style="text-decoration: underline;">2</span>968. <span style="text-decoration: underline;">13</span>073.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> HPS.004            15           181            253 HPS.004    95    23      95   24.1 <span style="text-decoration: underline;">2</span>933. <span style="text-decoration: underline;">13</span>944.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> HPS.004            15           181            253 HPS.004    96    24      96   22.2 <span style="text-decoration: underline;">3</span>175. <span style="text-decoration: underline;">12</span>527.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> HPS.004            15           181            253 HPS.004    97    25      97   21.4 <span style="text-decoration: underline;">3</span>268. <span style="text-decoration: underline;">11</span>409.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> HPS.004            15           181            253 HPS.004    98    26      98   17.6 <span style="text-decoration: underline;">3</span>338. <span style="text-decoration: underline;">11</span>384.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> HPS.004            15           181            253 HPS.004    99    27      99   17.5 <span style="text-decoration: underline;">3</span>299. <span style="text-decoration: underline;">11</span>993.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> HPS.004            15           181            253 HPS.004   100    28     100   15.6 <span style="text-decoration: underline;">2</span>888. <span style="text-decoration: underline;">11</span>756.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> HPS.004            15           181            253 HPS.004   101    29     101   14.8 <span style="text-decoration: underline;">2</span>892. <span style="text-decoration: underline;">12</span>946.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> HPS.004            15           181            253 HPS.004   102    30     102   14.8 <span style="text-decoration: underline;">2</span>852. <span style="text-decoration: underline;">13</span>550.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> HPS.004            15           181            253 HPS.004   103    31     103   14.0 <span style="text-decoration: underline;">2</span>829. <span style="text-decoration: underline;">13</span>177.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 2,678 more rows</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 3 more variables: ba_ca &lt;dbl&gt;, mg_ca &lt;dbl&gt;, li_ca &lt;dbl&gt;</span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span></span>
 <span class="r-in"><span></span></span>
@@ -247,7 +248,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

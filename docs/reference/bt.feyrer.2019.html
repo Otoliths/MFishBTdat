@@ -111,7 +111,7 @@
     </div>
     <div id="concepts">
     <h2>Concepts</h2>
-    <p>otolith, isotopic ratios, Sr8786</p>
+    <p>otolith, stable isotope, Sr8786</p>
     </div>
 
     <div id="ref-examples">
@@ -120,19 +120,19 @@
 <span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">bt.feyrer.2019</span></span></span>
 <span class="r-in"><span><span class="fu">tibble</span><span class="fu">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html" class="external-link">tibble</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 2,007 × 11</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    fish_id      distance sr8786 sr8786_norm standar_error  sr_v date      lattitude longitude length weight</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;int&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> CLH_2017_001     9.97  0.707       0.707     0.000<span style="text-decoration: underline;">117</span>   3.03 7/20/2017      39.0     -<span style="color: #BB0000;">123.</span>    280    425</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> CLH_2017_001    30.4   0.706       0.707     0.000<span style="text-decoration: underline;">064</span>9  3.52 7/20/2017      39.0     -<span style="color: #BB0000;">123.</span>    280    425</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> CLH_2017_001    42.1   0.707       0.707     0.000<span style="text-decoration: underline;">098</span>2  3.10 7/20/2017      39.0     -<span style="color: #BB0000;">123.</span>    280    425</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> CLH_2017_001    65.7   0.706       0.706     0.000<span style="text-decoration: underline;">061</span>4  4.52 7/20/2017      39.0     -<span style="color: #BB0000;">123.</span>    280    425</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> CLH_2017_001    67.8   0.706       0.706     0.000<span style="text-decoration: underline;">059</span>8  4.30 7/20/2017      39.0     -<span style="color: #BB0000;">123.</span>    280    425</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> CLH_2017_001   113.    0.706       0.706     0.000<span style="text-decoration: underline;">104</span>   4.47 7/20/2017      39.0     -<span style="color: #BB0000;">123.</span>    280    425</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> CLH_2017_001   156.    0.706       0.706     0.000<span style="text-decoration: underline;">077</span>   4.23 7/20/2017      39.0     -<span style="color: #BB0000;">123.</span>    280    425</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> CLH_2017_001   191.    0.706       0.706     0.000<span style="text-decoration: underline;">048</span>9  4.26 7/20/2017      39.0     -<span style="color: #BB0000;">123.</span>    280    425</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> CLH_2017_001   234.    0.706       0.706     0.000<span style="text-decoration: underline;">068</span>8  4.11 7/20/2017      39.0     -<span style="color: #BB0000;">123.</span>    280    425</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> CLH_2017_001   273.    0.706       0.706     0.000<span style="text-decoration: underline;">081</span>4  4.03 7/20/2017      39.0     -<span style="color: #BB0000;">123.</span>    280    425</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 1,997 more rows</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    fish_id     distance sr8786 sr8786_norm standar_error  sr_v date  lattitude longitude length weight</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;int&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> CLH_2017_0…     9.97  0.707       0.707     0.000<span style="text-decoration: underline;">117</span>   3.03 7/20…      39.0     -<span style="color: #BB0000;">123.</span>    280    425</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> CLH_2017_0…    30.4   0.706       0.707     0.000<span style="text-decoration: underline;">064</span>9  3.52 7/20…      39.0     -<span style="color: #BB0000;">123.</span>    280    425</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> CLH_2017_0…    42.1   0.707       0.707     0.000<span style="text-decoration: underline;">098</span>2  3.10 7/20…      39.0     -<span style="color: #BB0000;">123.</span>    280    425</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> CLH_2017_0…    65.7   0.706       0.706     0.000<span style="text-decoration: underline;">061</span>4  4.52 7/20…      39.0     -<span style="color: #BB0000;">123.</span>    280    425</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> CLH_2017_0…    67.8   0.706       0.706     0.000<span style="text-decoration: underline;">059</span>8  4.30 7/20…      39.0     -<span style="color: #BB0000;">123.</span>    280    425</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> CLH_2017_0…   113.    0.706       0.706     0.000<span style="text-decoration: underline;">104</span>   4.47 7/20…      39.0     -<span style="color: #BB0000;">123.</span>    280    425</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> CLH_2017_0…   156.    0.706       0.706     0.000<span style="text-decoration: underline;">077</span>   4.23 7/20…      39.0     -<span style="color: #BB0000;">123.</span>    280    425</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> CLH_2017_0…   191.    0.706       0.706     0.000<span style="text-decoration: underline;">048</span>9  4.26 7/20…      39.0     -<span style="color: #BB0000;">123.</span>    280    425</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> CLH_2017_0…   234.    0.706       0.706     0.000<span style="text-decoration: underline;">068</span>8  4.11 7/20…      39.0     -<span style="color: #BB0000;">123.</span>    280    425</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> CLH_2017_0…   273.    0.706       0.706     0.000<span style="text-decoration: underline;">081</span>4  4.03 7/20…      39.0     -<span style="color: #BB0000;">123.</span>    280    425</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 1,997 more rows</span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span></span>
 <span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span></span></span>
@@ -173,7 +173,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

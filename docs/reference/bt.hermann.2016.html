@@ -91,10 +91,11 @@
 
     <div id="format">
     <h2>Format</h2>
-    <p>The data frame 7,035 × 6 contains the following columns:</p><table class="table table"><tr><td><b>sampleid</b></td><td><code>character</code></td><td>fish identifier</td></tr><tr><td><b>species</b></td><td><code>character</code></td><td>species studied</td></tr><tr><td><b>distance</b></td><td><code>numeric</code></td><td>distance from fish otolith cores-edge transects (unit: micron)</td></tr><tr><td><b>value</b></td><td><code>character</code></td><td>Laser ablation–inductively coupled plasma mass spectrometry raw value</td></tr><tr><td><b>oto_element</b></td><td><code>character</code></td><td>bulk elements: Ba, Sr, Ca, Mn</td></tr><tr><td><b>locality</b></td><td><code>character</code></td><td>locality of captured</td></tr></table></div>
+    <p>The data frame 7,035 × 6 contains the following columns:</p><table class="table table"><tr><td><b>sampleid</b></td><td><code>character</code></td><td>fish identifier</td></tr><tr><td><b>species</b></td><td><code>character</code></td><td>species studied</td></tr><tr><td><b>distance</b></td><td><code>numeric</code></td><td>distance from fish otolith cores-edge transects (unit: micron)</td></tr><tr><td><b>value</b></td><td><code>character</code></td><td>Laser ablation–inductively coupled plasma mass spectrometry raw value</td></tr><tr><td><b>oto_element</b></td><td><code>character</code></td><td>trace element: Ba, Sr, Ca, Mn</td></tr><tr><td><b>locality</b></td><td><code>character</code></td><td>locality of captured</td></tr></table></div>
     <div id="details">
     <h2>Details</h2>
     <p>Laser ablation–inductively coupled plasma mass spectrometry raw data (background- and drift-corrected) for <em>Brachyplatystoma rousseauxii</em> (Ecuador and Colombia), <em>Brachyplatystoma filamentosum</em> (Colombia), and six <em>Prochilodus nigricans</em>. Data include Ca, Sr, and Ba for both Brachyplatystoma species and localities, and Ca, Ba, and Mn for all six <em>P. nigricans</em>.</p>
+<p>Instrument: LA-ICP-MS (laser ablation-inductively coupled plasma mass spectrometry);SXFM (scanning x-ray fluorescence imaging)</p>
     </div>
     <div id="source">
     <h2>Source</h2>
@@ -110,7 +111,7 @@
     </div>
     <div id="concepts">
     <h2>Concepts</h2>
-    <p>otolith, bulk elements, Sr/Ca, Mn/Ca, Ba/Ca</p>
+    <p>otolith, trace element, Sr/Ca, Mn/Ca, Ba/Ca</p>
     </div>
 
     <div id="ref-examples">
@@ -131,14 +132,14 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> BR1      Brachyplatystoma rousseauxii    53.1   <span style="text-decoration: underline;">609</span>487. Ca          Ecuador </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> BR1      Brachyplatystoma rousseauxii    60.7   <span style="text-decoration: underline;">759</span>480. Ca          Ecuador </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> BR1      Brachyplatystoma rousseauxii    68.3   <span style="text-decoration: underline;">509</span>173. Ca          Ecuador </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 7,025 more rows</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 7,025 more rows</span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/table.html" class="external-link">table</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">species</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Brachyplatystoma filamentosum  Brachyplatystoma rousseauxii         Prochilodus nigricans </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                          1125                          3612                          2298 </span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span></span>
-<span class="r-in"><span><span class="co">### bulk elements profile figure</span></span></span>
+<span class="r-in"><span><span class="co">### trace element profile figure</span></span></span>
 <span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyr.tidyverse.org" class="external-link">tidyr</a></span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span></span></span>
@@ -203,7 +204,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

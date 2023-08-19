@@ -112,7 +112,7 @@
     </div>
     <div id="concepts">
     <h2>Concepts</h2>
-    <p>otolith, bulk elements, Sr/Ca, Mn/Ca, Mg/Ca, Ba/Ca, Pb/Ca, Cu/Ca</p>
+    <p>otolith, trace element, Sr/Ca, Mn/Ca, Mg/Ca, Ba/Ca, Pb/Ca, Cu/Ca</p>
     </div>
 
     <div id="ref-examples">
@@ -121,19 +121,20 @@
 <span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">bt.hill.2020</span></span></span>
 <span class="r-in"><span><span class="fu">tibble</span><span class="fu">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html" class="external-link">tibble</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 266,731 × 16</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    river parent…¹ estuary state capt_yr fishno sex   elaps…² dista…³ mg_ca mn_ca cu_ca zn_ca sr_ca ba_ca pb_ca</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> Alt   Alt      AltSd   GA       <span style="text-decoration: underline;">2</span>017    786 F         0       0    0.05  0.43  0.63  0.04  2.03  0.14  0.03</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> Alt   Alt      AltSd   GA       <span style="text-decoration: underline;">2</span>017    786 F         0.8     2.4  0.04  0.91  0.8   0.38  2.04  0.21  0.01</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> Alt   Alt      AltSd   GA       <span style="text-decoration: underline;">2</span>017    786 F         1.6     4.8  0.05  0.5   0.4   1     1.99  0.17  0.01</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> Alt   Alt      AltSd   GA       <span style="text-decoration: underline;">2</span>017    786 F         2.4     7.2  0.03  0.27  0.5  -<span style="color: #BB0000;">0.03</span>  1.57  0.16  0   </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> Alt   Alt      AltSd   GA       <span style="text-decoration: underline;">2</span>017    786 F         3.2     9.6  0.04  0.39  0.39  0.44  1.99  0.18  0   </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> Alt   Alt      AltSd   GA       <span style="text-decoration: underline;">2</span>017    786 F         4      12    0.02  0.57  0.18 -<span style="color: #BB0000;">0.16</span>  1.82  0.13  0   </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> Alt   Alt      AltSd   GA       <span style="text-decoration: underline;">2</span>017    786 F         4.8    14.4  0.03  0.66  0.54  0.38  1.84  0.15 -<span style="color: #BB0000;">0.01</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> Alt   Alt      AltSd   GA       <span style="text-decoration: underline;">2</span>017    786 F         5.6    16.8  0.02  0.64  0.14  0.75  1.72  0.13  0.01</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> Alt   Alt      AltSd   GA       <span style="text-decoration: underline;">2</span>017    786 F         6.4    19.2  0.03  0.8   0.1  -<span style="color: #BB0000;">0.13</span>  1.45  0.16  0   </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> Alt   Alt      AltSd   GA       <span style="text-decoration: underline;">2</span>017    786 F         7.2    21.6  0.03  0.37  0.43  0.16  1.52  0.24  0   </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 266,721 more rows, and abbreviated variable names ¹​parent_river, ²​elapsed_time, ³​distance</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    river parent_river estuary state capt_yr fishno sex   elapsed_time distance mg_ca mn_ca cu_ca zn_ca</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> Alt   Alt          AltSd   GA       <span style="text-decoration: underline;">2</span>017    786 F              0        0    0.05  0.43  0.63  0.04</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> Alt   Alt          AltSd   GA       <span style="text-decoration: underline;">2</span>017    786 F              0.8      2.4  0.04  0.91  0.8   0.38</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> Alt   Alt          AltSd   GA       <span style="text-decoration: underline;">2</span>017    786 F              1.6      4.8  0.05  0.5   0.4   1   </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> Alt   Alt          AltSd   GA       <span style="text-decoration: underline;">2</span>017    786 F              2.4      7.2  0.03  0.27  0.5  -<span style="color: #BB0000;">0.03</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> Alt   Alt          AltSd   GA       <span style="text-decoration: underline;">2</span>017    786 F              3.2      9.6  0.04  0.39  0.39  0.44</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> Alt   Alt          AltSd   GA       <span style="text-decoration: underline;">2</span>017    786 F              4       12    0.02  0.57  0.18 -<span style="color: #BB0000;">0.16</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> Alt   Alt          AltSd   GA       <span style="text-decoration: underline;">2</span>017    786 F              4.8     14.4  0.03  0.66  0.54  0.38</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> Alt   Alt          AltSd   GA       <span style="text-decoration: underline;">2</span>017    786 F              5.6     16.8  0.02  0.64  0.14  0.75</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> Alt   Alt          AltSd   GA       <span style="text-decoration: underline;">2</span>017    786 F              6.4     19.2  0.03  0.8   0.1  -<span style="color: #BB0000;">0.13</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> Alt   Alt          AltSd   GA       <span style="text-decoration: underline;">2</span>017    786 F              7.2     21.6  0.03  0.37  0.43  0.16</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 266,721 more rows</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 3 more variables: sr_ca &lt;dbl&gt;, ba_ca &lt;dbl&gt;, pb_ca &lt;dbl&gt;</span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span></span>
 <span class="r-in"><span><span class="co">### loading packages</span></span></span>
@@ -238,7 +239,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

@@ -110,7 +110,7 @@
     </div>
     <div id="concepts">
     <h2>Concepts</h2>
-    <p>eye lenses, isotopic ratios, d13C, d15N</p>
+    <p>eye lenses, stable isotope, d13C, d15N</p>
     </div>
 
     <div id="ref-examples">
@@ -119,20 +119,20 @@
 <span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">bt.young.2022</span></span></span>
 <span class="r-in"><span><span class="fu">tibble</span><span class="fu">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html" class="external-link">tibble</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 1,050 × 13</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    fish_id eye_side layer_number isotope dx_value width…¹ species speci…² date  latit…³ longi…⁴ stand…⁵ weight</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span>       1 L                   1 d13C       -<span style="color: #BB0000;">23.7</span>   <span style="text-decoration: underline;">2</span>592  Lavini… HCH     7/20…    39.0   -<span style="color: #BB0000;">123.</span>     280   425.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span>       1 L                   2 d13C       -<span style="color: #BB0000;">24.7</span>   <span style="text-decoration: underline;">2</span>341  Lavini… HCH     7/20…    39.0   -<span style="color: #BB0000;">123.</span>     280   425.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span>       1 L                   3 d13C       -<span style="color: #BB0000;">23.0</span>   <span style="text-decoration: underline;">1</span>972. Lavini… HCH     7/20…    39.0   -<span style="color: #BB0000;">123.</span>     280   425.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span>       1 L                   4 d13C       -<span style="color: #BB0000;">22.1</span>   <span style="text-decoration: underline;">1</span>866. Lavini… HCH     7/20…    39.0   -<span style="color: #BB0000;">123.</span>     280   425.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span>       1 L                   5 d13C       -<span style="color: #BB0000;">22.2</span>   <span style="text-decoration: underline;">1</span>712  Lavini… HCH     7/20…    39.0   -<span style="color: #BB0000;">123.</span>     280   425.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span>       1 L                   6 d13C       -<span style="color: #BB0000;">21.0</span>   <span style="text-decoration: underline;">1</span>582. Lavini… HCH     7/20…    39.0   -<span style="color: #BB0000;">123.</span>     280   425.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span>       1 L                   7 d13C       -<span style="color: #BB0000;">20.6</span>   <span style="text-decoration: underline;">1</span>508. Lavini… HCH     7/20…    39.0   -<span style="color: #BB0000;">123.</span>     280   425.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span>       1 L                   8 d13C       -<span style="color: #BB0000;">19.7</span>   <span style="text-decoration: underline;">1</span>400. Lavini… HCH     7/20…    39.0   -<span style="color: #BB0000;">123.</span>     280   425.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span>       1 L                   9 d13C       -<span style="color: #BB0000;">18.1</span>   <span style="text-decoration: underline;">1</span>279  Lavini… HCH     7/20…    39.0   -<span style="color: #BB0000;">123.</span>     280   425.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span>       1 L                  10 d13C       -<span style="color: #BB0000;">17.5</span>   <span style="text-decoration: underline;">1</span>166. Lavini… HCH     7/20…    39.0   -<span style="color: #BB0000;">123.</span>     280   425.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 1,040 more rows, and abbreviated variable names ¹​width_mean, ²​species_code, ³​latitude, ⁴​longitude,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   ⁵​standard_length</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    fish_id eye_side layer_number isotope dx_value width_mean species       species_code date  latitude</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span>       1 L                   1 d13C       -<span style="color: #BB0000;">23.7</span>      <span style="text-decoration: underline;">2</span>592  Lavinia exil… HCH          7/20…     39.0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span>       1 L                   2 d13C       -<span style="color: #BB0000;">24.7</span>      <span style="text-decoration: underline;">2</span>341  Lavinia exil… HCH          7/20…     39.0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span>       1 L                   3 d13C       -<span style="color: #BB0000;">23.0</span>      <span style="text-decoration: underline;">1</span>972. Lavinia exil… HCH          7/20…     39.0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span>       1 L                   4 d13C       -<span style="color: #BB0000;">22.1</span>      <span style="text-decoration: underline;">1</span>866. Lavinia exil… HCH          7/20…     39.0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span>       1 L                   5 d13C       -<span style="color: #BB0000;">22.2</span>      <span style="text-decoration: underline;">1</span>712  Lavinia exil… HCH          7/20…     39.0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span>       1 L                   6 d13C       -<span style="color: #BB0000;">21.0</span>      <span style="text-decoration: underline;">1</span>582. Lavinia exil… HCH          7/20…     39.0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span>       1 L                   7 d13C       -<span style="color: #BB0000;">20.6</span>      <span style="text-decoration: underline;">1</span>508. Lavinia exil… HCH          7/20…     39.0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span>       1 L                   8 d13C       -<span style="color: #BB0000;">19.7</span>      <span style="text-decoration: underline;">1</span>400. Lavinia exil… HCH          7/20…     39.0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span>       1 L                   9 d13C       -<span style="color: #BB0000;">18.1</span>      <span style="text-decoration: underline;">1</span>279  Lavinia exil… HCH          7/20…     39.0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span>       1 L                  10 d13C       -<span style="color: #BB0000;">17.5</span>      <span style="text-decoration: underline;">1</span>166. Lavinia exil… HCH          7/20…     39.0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 1,040 more rows</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 3 more variables: longitude &lt;dbl&gt;, standard_length &lt;int&gt;, weight &lt;dbl&gt;</span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span></span>
 <span class="r-in"><span><span class="co">### load package</span></span></span>
@@ -186,7 +186,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

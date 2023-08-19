@@ -98,7 +98,7 @@ Mg/Ca in umol/mol;
 Mn/Ca in umol/mol;
 Sr/Ca in mmol/mol;
 Zn/Ca in umol/mol
-)</td></tr><tr><td><b>elements</b></td><td><code>character</code></td><td>bulk elements</td></tr><tr><td><b>date</b></td><td><code>character</code></td><td>date of capture</td></tr><tr><td><b>ocean</b></td><td><code>character</code></td><td>ocean of capture</td></tr><tr><td><b>region</b></td><td><code>character</code></td><td>region of capture</td></tr><tr><td><b>sex</b></td><td><code>character</code></td><td>fish sex</td></tr><tr><td><b>fl</b></td><td><code>numeric</code></td><td>fork length (cm)</td></tr><tr><td><b>age</b></td><td><code>character</code></td><td>estimated age (year)</td></tr><tr><td><b>gg_weight</b></td><td><code>integer</code></td><td>gilled and gutted (gg) weight (kg)</td></tr></table></div>
+)</td></tr><tr><td><b>elements</b></td><td><code>character</code></td><td>trace element</td></tr><tr><td><b>date</b></td><td><code>character</code></td><td>date of capture</td></tr><tr><td><b>ocean</b></td><td><code>character</code></td><td>ocean of capture</td></tr><tr><td><b>region</b></td><td><code>character</code></td><td>region of capture</td></tr><tr><td><b>sex</b></td><td><code>character</code></td><td>fish sex</td></tr><tr><td><b>fl</b></td><td><code>numeric</code></td><td>fork length (cm)</td></tr><tr><td><b>age</b></td><td><code>character</code></td><td>estimated age (year)</td></tr><tr><td><b>gg_weight</b></td><td><code>integer</code></td><td>gilled and gutted (gg) weight (kg)</td></tr></table></div>
     <div id="details">
     <h2>Details</h2>
     <p>Elemental profiles of individual Pacific bluefin tuna <em>Thunnus orientalis</em> (PBT) otoliths collected from the Eastern Pacific (EPO), Western Pacific (WPO) and South Pacific (SPO); different colored lines represent individual fish from each region.</p>
@@ -118,7 +118,7 @@ Zn/Ca in umol/mol
     </div>
     <div id="concepts">
     <h2>Concepts</h2>
-    <p>otolith, bulk elements, Ba/Ca, Li/Ca, Mg/Ca, Mn/Ca, Sr/Ca, Zn/Ca</p>
+    <p>otolith, trace element, Ba/Ca, Li/Ca, Mg/Ca, Mn/Ca, Sr/Ca, Zn/Ca</p>
     </div>
 
     <div id="ref-examples">
@@ -127,19 +127,19 @@ Zn/Ca in umol/mol
 <span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">bt.mohan.2022</span></span></span>
 <span class="r-in"><span><span class="fu">tibble</span><span class="fu">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html" class="external-link">tibble</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 246,375 × 11</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    pbt_id distance value elements     date ocean        region                    sex      fl   age gg_weight</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;int&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> EP01       0     3.20 Li_Ca    20<span style="text-decoration: underline;">170</span>920 East Pacific San Deigo, Califronia USA M       197     9       156</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> EP01       2.02  3.42 Li_Ca    20<span style="text-decoration: underline;">170</span>920 East Pacific San Deigo, Califronia USA M       197     9       156</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> EP01       4.03  3.67 Li_Ca    20<span style="text-decoration: underline;">170</span>920 East Pacific San Deigo, Califronia USA M       197     9       156</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> EP01       6.05  3.89 Li_Ca    20<span style="text-decoration: underline;">170</span>920 East Pacific San Deigo, Califronia USA M       197     9       156</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> EP01       8.06  3.89 Li_Ca    20<span style="text-decoration: underline;">170</span>920 East Pacific San Deigo, Califronia USA M       197     9       156</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> EP01      10.1   4.10 Li_Ca    20<span style="text-decoration: underline;">170</span>920 East Pacific San Deigo, Califronia USA M       197     9       156</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> EP01      12.1   3.89 Li_Ca    20<span style="text-decoration: underline;">170</span>920 East Pacific San Deigo, Califronia USA M       197     9       156</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> EP01      14.1   3.92 Li_Ca    20<span style="text-decoration: underline;">170</span>920 East Pacific San Deigo, Califronia USA M       197     9       156</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> EP01      16.1   3.73 Li_Ca    20<span style="text-decoration: underline;">170</span>920 East Pacific San Deigo, Califronia USA M       197     9       156</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> EP01      18.1   3.64 Li_Ca    20<span style="text-decoration: underline;">170</span>920 East Pacific San Deigo, Califronia USA M       197     9       156</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 246,365 more rows</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    pbt_id distance value elements     date ocean        region             sex      fl   age gg_weight</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>              <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;int&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> EP01       0     3.20 Li_Ca    20<span style="text-decoration: underline;">170</span>920 East Pacific San Deigo, Califr… M       197     9       156</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> EP01       2.02  3.42 Li_Ca    20<span style="text-decoration: underline;">170</span>920 East Pacific San Deigo, Califr… M       197     9       156</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> EP01       4.03  3.67 Li_Ca    20<span style="text-decoration: underline;">170</span>920 East Pacific San Deigo, Califr… M       197     9       156</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> EP01       6.05  3.89 Li_Ca    20<span style="text-decoration: underline;">170</span>920 East Pacific San Deigo, Califr… M       197     9       156</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> EP01       8.06  3.89 Li_Ca    20<span style="text-decoration: underline;">170</span>920 East Pacific San Deigo, Califr… M       197     9       156</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> EP01      10.1   4.10 Li_Ca    20<span style="text-decoration: underline;">170</span>920 East Pacific San Deigo, Califr… M       197     9       156</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> EP01      12.1   3.89 Li_Ca    20<span style="text-decoration: underline;">170</span>920 East Pacific San Deigo, Califr… M       197     9       156</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> EP01      14.1   3.92 Li_Ca    20<span style="text-decoration: underline;">170</span>920 East Pacific San Deigo, Califr… M       197     9       156</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> EP01      16.1   3.73 Li_Ca    20<span style="text-decoration: underline;">170</span>920 East Pacific San Deigo, Califr… M       197     9       156</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> EP01      18.1   3.64 Li_Ca    20<span style="text-decoration: underline;">170</span>920 East Pacific San Deigo, Califr… M       197     9       156</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 246,365 more rows</span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span></span>
 <span class="r-in"><span><span class="co">### load package</span></span></span>
@@ -244,7 +244,7 @@ Zn/Ca in umol/mol
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

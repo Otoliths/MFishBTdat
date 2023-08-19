@@ -112,7 +112,7 @@
     </div>
     <div id="concepts">
     <h2>Concepts</h2>
-    <p>otolith, bulk elements, Sr/Ca, Mg/Ca, Mn/Ca, Zn/Ca, Ba/Ca</p>
+    <p>otolith, trace element, Sr/Ca, Mg/Ca, Mn/Ca, Zn/Ca, Ba/Ca</p>
     </div>
 
     <div id="ref-examples">
@@ -121,19 +121,19 @@
 <span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">bt.fukushima.2014</span></span></span>
 <span class="r-in"><span><span class="fu">tibble</span><span class="fu">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html" class="external-link">tibble</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 3,139 × 12</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    fish_id  distance mg_ca mn_ca  zn_ca sr_ca ba_ca species                     fl date           region river</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> DATA104M     0     208.  2.24 7.23    919. 101.  Henicorhynchus siamensis   135 November, 2007 Thai … Meko…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> DATA104M     0.06  140.  0    1.67    876.  38.1 Henicorhynchus siamensis   135 November, 2007 Thai … Meko…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> DATA104M     0.12  127.  0    0.029<span style="text-decoration: underline;">9</span>  727.  23.2 Henicorhynchus siamensis   135 November, 2007 Thai … Meko…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> DATA104M     0.18  165.  5.29 0       892.  37.0 Henicorhynchus siamensis   135 November, 2007 Thai … Meko…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> DATA104M     0.24  134.  4.12 0       618.  32.9 Henicorhynchus siamensis   135 November, 2007 Thai … Meko…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> DATA104M     0.3   135.  1.46 0       813.  46.3 Henicorhynchus siamensis   135 November, 2007 Thai … Meko…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> DATA104M     0.36  156.  2.83 0       670.  36.0 Henicorhynchus siamensis   135 November, 2007 Thai … Meko…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> DATA104M     0.42  151.  9.34 0       746.  45.0 Henicorhynchus siamensis   135 November, 2007 Thai … Meko…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> DATA104M     0.48  114. 20.8  0       642.  44.2 Henicorhynchus siamensis   135 November, 2007 Thai … Meko…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> DATA104M     0.54  139. 16.3  0       850.  70.1 Henicorhynchus siamensis   135 November, 2007 Thai … Meko…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 3,129 more rows</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    fish_id  distance mg_ca mn_ca  zn_ca sr_ca ba_ca species                     fl date   region river</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> DATA104M     0     208.  2.24 7.23    919. 101.  Henicorhynchus siamensis   135 Novem… Thai … Meko…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> DATA104M     0.06  140.  0    1.67    876.  38.1 Henicorhynchus siamensis   135 Novem… Thai … Meko…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> DATA104M     0.12  127.  0    0.029<span style="text-decoration: underline;">9</span>  727.  23.2 Henicorhynchus siamensis   135 Novem… Thai … Meko…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> DATA104M     0.18  165.  5.29 0       892.  37.0 Henicorhynchus siamensis   135 Novem… Thai … Meko…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> DATA104M     0.24  134.  4.12 0       618.  32.9 Henicorhynchus siamensis   135 Novem… Thai … Meko…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> DATA104M     0.3   135.  1.46 0       813.  46.3 Henicorhynchus siamensis   135 Novem… Thai … Meko…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> DATA104M     0.36  156.  2.83 0       670.  36.0 Henicorhynchus siamensis   135 Novem… Thai … Meko…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> DATA104M     0.42  151.  9.34 0       746.  45.0 Henicorhynchus siamensis   135 Novem… Thai … Meko…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> DATA104M     0.48  114. 20.8  0       642.  44.2 Henicorhynchus siamensis   135 Novem… Thai … Meko…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> DATA104M     0.54  139. 16.3  0       850.  70.1 Henicorhynchus siamensis   135 Novem… Thai … Meko…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 3,129 more rows</span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span></span>
 <span class="r-in"><span><span class="co">### load package</span></span></span>
@@ -220,7 +220,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

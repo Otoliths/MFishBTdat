@@ -115,7 +115,7 @@ Sr/Ca in mmol/mol)</td></tr><tr><td><b>common_name</b></td><td><code>character</
     </div>
     <div id="concepts">
     <h2>Concepts</h2>
-    <p>vertebrae, bulk elements, Ba/Ca, Mn/Ca, Sr/Ca</p>
+    <p>vertebrae, trace element, Ba/Ca, Mn/Ca, Sr/Ca</p>
     </div>
 
     <div id="ref-examples">
@@ -124,20 +124,20 @@ Sr/Ca in mmol/mol)</td></tr><tr><td><b>common_name</b></td><td><code>character</
 <span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">bt.mohan.2018</span></span></span>
 <span class="r-in"><span><span class="fu">tibble</span><span class="fu">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html" class="external-link">tibble</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 11,118 × 12</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    fish_id vert_sample_id distance value element common_name scientifi…¹ recap…² recap…³ recap…⁴ recap…⁵ sex  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>             <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> A038423 D1                 34.7  16.3 Mn_Ca   mako shark  Isurus oxy…    30.1   -<span style="color: #BB0000;">116.</span> 2008-1…     157 M    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> A038423 D1                 59.9  15.3 Mn_Ca   mako shark  Isurus oxy…    30.1   -<span style="color: #BB0000;">116.</span> 2008-1…     157 M    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> A038423 D1                101.   14.1 Mn_Ca   mako shark  Isurus oxy…    30.1   -<span style="color: #BB0000;">116.</span> 2008-1…     157 M    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> A038423 D1                 99.0  13.2 Mn_Ca   mako shark  Isurus oxy…    30.1   -<span style="color: #BB0000;">116.</span> 2008-1…     157 M    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> A038423 D1                 99.0  12.3 Mn_Ca   mako shark  Isurus oxy…    30.1   -<span style="color: #BB0000;">116.</span> 2008-1…     157 M    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> A038423 D1                228.   12.7 Mn_Ca   mako shark  Isurus oxy…    30.1   -<span style="color: #BB0000;">116.</span> 2008-1…     157 M    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> A038423 D1                179.   12.0 Mn_Ca   mako shark  Isurus oxy…    30.1   -<span style="color: #BB0000;">116.</span> 2008-1…     157 M    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> A038423 D1                350.   13.0 Mn_Ca   mako shark  Isurus oxy…    30.1   -<span style="color: #BB0000;">116.</span> 2008-1…     157 M    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> A038423 D1                443.   11.8 Mn_Ca   mako shark  Isurus oxy…    30.1   -<span style="color: #BB0000;">116.</span> 2008-1…     157 M    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> A038423 D1                495.   11.3 Mn_Ca   mako shark  Isurus oxy…    30.1   -<span style="color: #BB0000;">116.</span> 2008-1…     157 M    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 11,108 more rows, and abbreviated variable names ¹​scientific_name, ²​recapture_lat, ³​recapture_long,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   ⁴​recapture_date, ⁵​recapture_fl</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    fish_id vert_sample_id distance value element common_name scientific_name   recapture_lat</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>             <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> A038423 D1                 34.7  16.3 Mn_Ca   mako shark  Isurus oxyrinchus          30.1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> A038423 D1                 59.9  15.3 Mn_Ca   mako shark  Isurus oxyrinchus          30.1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> A038423 D1                101.   14.1 Mn_Ca   mako shark  Isurus oxyrinchus          30.1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> A038423 D1                 99.0  13.2 Mn_Ca   mako shark  Isurus oxyrinchus          30.1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> A038423 D1                 99.0  12.3 Mn_Ca   mako shark  Isurus oxyrinchus          30.1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> A038423 D1                228.   12.7 Mn_Ca   mako shark  Isurus oxyrinchus          30.1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> A038423 D1                179.   12.0 Mn_Ca   mako shark  Isurus oxyrinchus          30.1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> A038423 D1                350.   13.0 Mn_Ca   mako shark  Isurus oxyrinchus          30.1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> A038423 D1                443.   11.8 Mn_Ca   mako shark  Isurus oxyrinchus          30.1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> A038423 D1                495.   11.3 Mn_Ca   mako shark  Isurus oxyrinchus          30.1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 11,108 more rows</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 4 more variables: recapture_long &lt;dbl&gt;, recapture_date &lt;chr&gt;, recapture_fl &lt;int&gt;, sex &lt;chr&gt;</span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span></span>
 <span class="r-in"><span><span class="co">### load package</span></span></span>
@@ -206,7 +206,7 @@ Sr/Ca in mmol/mol)</td></tr><tr><td><b>common_name</b></td><td><code>character</
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

@@ -118,7 +118,7 @@ O(FLAGGED transect that failed to go through the core and may or may not be comp
     </div>
     <div id="concepts">
     <h2>Concepts</h2>
-    <p>otolith, bulk elements, Sr/Ca</p>
+    <p>otolith, trace element, Sr/Ca</p>
     </div>
 
     <div id="ref-examples">
@@ -127,20 +127,21 @@ O(FLAGGED transect that failed to go through the core and may or may not be comp
 <span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">bt.alo.2019</span></span></span>
 <span class="r-in"><span><span class="fu">tibble</span><span class="fu">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html" class="external-link">tibble</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 64,351 × 10</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    fish_id file_id species              family     location              ontog…¹ trans…² infer…³ dista…⁴ sr_ca</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                 <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochiton taeniatus Galaxiidae Valdivia-Santo Domin… adult   F       catadr…       0 1.83 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochiton taeniatus Galaxiidae Valdivia-Santo Domin… adult   F       catadr…       1 0.879</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochiton taeniatus Galaxiidae Valdivia-Santo Domin… adult   F       catadr…       2 1.03 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochiton taeniatus Galaxiidae Valdivia-Santo Domin… adult   F       catadr…       3 1.92 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochiton taeniatus Galaxiidae Valdivia-Santo Domin… adult   F       catadr…       4 2.17 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochiton taeniatus Galaxiidae Valdivia-Santo Domin… adult   F       catadr…       5 2.02 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochiton taeniatus Galaxiidae Valdivia-Santo Domin… adult   F       catadr…       6 1.71 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochiton taeniatus Galaxiidae Valdivia-Santo Domin… adult   F       catadr…       7 1.70 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochiton taeniatus Galaxiidae Valdivia-Santo Domin… adult   F       catadr…       8 1.56 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochiton taeniatus Galaxiidae Valdivia-Santo Domin… adult   F       catadr…       9 1.85 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 64,341 more rows, and abbreviated variable names ¹​ontogenetic_stage, ²​transect_quality,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   ³​inferred_migration_pattern, ⁴​distance</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    fish_id file_id species   family location ontogenetic_stage transect_quality inferred_migration_p…¹</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>             <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>            <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochit… Galax… Valdivi… adult             F                catadromous           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochit… Galax… Valdivi… adult             F                catadromous           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochit… Galax… Valdivi… adult             F                catadromous           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochit… Galax… Valdivi… adult             F                catadromous           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochit… Galax… Valdivi… adult             F                catadromous           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochit… Galax… Valdivi… adult             F                catadromous           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochit… Galax… Valdivi… adult             F                catadromous           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochit… Galax… Valdivi… adult             F                catadromous           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochit… Galax… Valdivi… adult             F                catadromous           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochit… Galax… Valdivi… adult             F                catadromous           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 64,341 more rows</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ abbreviated name: ¹​inferred_migration_pattern</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 2 more variables: distance &lt;int&gt;, sr_ca &lt;dbl&gt;</span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span></span>
 <span class="r-in"><span><span class="co">### load package</span></span></span>
@@ -175,7 +176,7 @@ O(FLAGGED transect that failed to go through the core and may or may not be comp
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 
