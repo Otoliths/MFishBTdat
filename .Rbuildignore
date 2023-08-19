@@ -1,1 +1,9 @@
-
+^.*\.Rproj$
+^\.Rproj\.user$
+^\.git$
+^\.github$
+^\.gitignore$
+^_pkgdown\.yml$
+^docs$
+^data-raw$
+^CONCEPTS$
