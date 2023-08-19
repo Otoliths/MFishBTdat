@@ -69,9 +69,9 @@ dat_search <- function(pattern, concept=TRUE, matchall=TRUE, fixed=TRUE, pkgdown
       cat("
 In terms of biogeochemical tags, the following terms have been used at least once:
 
-bulk elements,isotopic ratios.
+trace element,stable isotope.
 
-In terms of biomineral archives/structures, the following terms have been used at least once:
+In terms of biological archives/structures, the following terms have been used at least once:
 
 otolith, scale, eye lenses, vertebra.
 
