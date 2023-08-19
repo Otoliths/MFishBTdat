@@ -95,10 +95,14 @@
 F(GOOD transect, edge-core-edge, good quality, easy to interpret);
 H(half transect, edge to core);
 P(partial transect, edge – core – extra data without reaching the next edge);
-O(FLAGGED transect that failed to go through the core and may or may not be complete from one edge to the next)</td></tr><tr><td><b>inferred_migration_pattern</b></td><td><code>character</code></td><td>inferred migration pattern</td></tr><tr><td><b>distance</b></td><td><code>integer</code></td><td>relative transect distance (5um)</td></tr><tr><td><b>sr_ca</b></td><td><code>numeric</code></td><td>otoloth sr:ca (mmol/mol)</td></tr></table></div>
+O(FLAGGED transect that failed to go through the core and may or may not be complete from one edge to the next)</td></tr><tr><td><b>inferred_migration_pattern</b></td><td><code>character</code></td><td>inferred migration pattern</td></tr><tr><td><b>distance</b></td><td><code>integer</code></td><td>relative transect distance (5um)</td></tr><tr><td><b>sr_ca</b></td><td><code>numeric</code></td><td>otolith sr:ca (mmol/mol)</td></tr></table></div>
     <div id="details">
     <h2>Details</h2>
     <p>This study was to document migratory life histories of native galaxiids and introduced salmonids from a wide latitudinal range in Chilean Patagonia (39–48°S). Otolith microchemistry data were analysed using a recursive partitioning approach to test for diadromy in Patagonian river fishes.</p>
+<p>Instrument: LA-ICP-MS (laser ablation-inductively coupled plasma mass spectrometry)</p>
+<p>Beam diameter: 50um</p>
+<p>Scan speed: 5um/s</p>
+<p>Reference materials: FEBS-1 (National Research Council Canada, Institute for National Measurement Standards Ottawa, ON, Canada)</p>
     </div>
     <div id="source">
     <h2>Source</h2>
@@ -123,18 +127,18 @@ O(FLAGGED transect that failed to go through the core and may or may not be comp
 <span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">bt.alo.2019</span></span></span>
 <span class="r-in"><span><span class="fu">tibble</span><span class="fu">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html" class="external-link">tibble</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 64,351 × 10</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    fish_id file_id species              family     location      ontog…¹ trans…² infer…³ dista…⁴ sr_ca</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochiton taeniatus Galaxiidae Valdivia-San… adult   F       catadr…       0 1.83 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochiton taeniatus Galaxiidae Valdivia-San… adult   F       catadr…       1 0.879</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochiton taeniatus Galaxiidae Valdivia-San… adult   F       catadr…       2 1.03 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochiton taeniatus Galaxiidae Valdivia-San… adult   F       catadr…       3 1.92 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochiton taeniatus Galaxiidae Valdivia-San… adult   F       catadr…       4 2.17 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochiton taeniatus Galaxiidae Valdivia-San… adult   F       catadr…       5 2.02 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochiton taeniatus Galaxiidae Valdivia-San… adult   F       catadr…       6 1.71 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochiton taeniatus Galaxiidae Valdivia-San… adult   F       catadr…       7 1.70 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochiton taeniatus Galaxiidae Valdivia-San… adult   F       catadr…       8 1.56 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochiton taeniatus Galaxiidae Valdivia-San… adult   F       catadr…       9 1.85 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    fish_id file_id species              family     location              ontog…¹ trans…² infer…³ dista…⁴ sr_ca</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                 <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochiton taeniatus Galaxiidae Valdivia-Santo Domin… adult   F       catadr…       0 1.83 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochiton taeniatus Galaxiidae Valdivia-Santo Domin… adult   F       catadr…       1 0.879</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochiton taeniatus Galaxiidae Valdivia-Santo Domin… adult   F       catadr…       2 1.03 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochiton taeniatus Galaxiidae Valdivia-Santo Domin… adult   F       catadr…       3 1.92 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochiton taeniatus Galaxiidae Valdivia-Santo Domin… adult   F       catadr…       4 2.17 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochiton taeniatus Galaxiidae Valdivia-Santo Domin… adult   F       catadr…       5 2.02 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochiton taeniatus Galaxiidae Valdivia-Santo Domin… adult   F       catadr…       6 1.71 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochiton taeniatus Galaxiidae Valdivia-Santo Domin… adult   F       catadr…       7 1.70 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochiton taeniatus Galaxiidae Valdivia-Santo Domin… adult   F       catadr…       8 1.56 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span>    <span style="text-decoration: underline;">4</span>359 040.txt Aplochiton taeniatus Galaxiidae Valdivia-Santo Domin… adult   F       catadr…       9 1.85 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 64,341 more rows, and abbreviated variable names ¹​ontogenetic_stage, ²​transect_quality,</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   ³​inferred_migration_pattern, ⁴​distance</span></span>
 <span class="r-in"><span></span></span>
@@ -142,7 +146,6 @@ O(FLAGGED transect that failed to go through the core and may or may not be comp
 <span class="r-in"><span><span class="co">### load package</span></span></span>
 <span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span></span></span>
-<span class="r-in"><span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### otolith sr/ca</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">dat</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span><span class="va">distance</span>, <span class="va">sr_ca</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span></span>
@@ -172,7 +175,7 @@ O(FLAGGED transect that failed to go through the core and may or may not be comp
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

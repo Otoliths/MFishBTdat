@@ -91,11 +91,13 @@
 
     <div id="format">
     <h2>Format</h2>
-    <p>The data frame 86 × 8 contains the following columns:</p><table class="table table"><tr><td><b>fish_samples</b></td><td><code>character</code></td><td>fish sample id</td></tr><tr><td><b>biomineral_archives</b></td><td><code>character</code></td><td>biomineral archives (vertebra and otolith)</td></tr><tr><td><b>biogeochemical_tags</b></td><td><code>character</code></td><td>biogeochemical tags</td></tr><tr><td><b>element_ratio</b></td><td><code>character</code></td><td>element ratio</td></tr><tr><td><b>section</b></td><td><code>character</code></td><td>biomineral archives of fish equally into sections</td></tr><tr><td><b>distance</b></td><td><code>numeric</code></td><td>distance of from biomineral archives core to edge</td></tr><tr><td><b>mean_values</b></td><td><code>numeric</code></td><td>mean values (ug/mg in bulk elements; permil in isotopic ratios)</td></tr><tr><td><b>sd</b></td><td><code>numeric</code></td><td>standard deviation (ug/mg in bulk elements; permil in isotopic ratios)</td></tr></table></div>
+    <p>The data frame 86 × 8 contains the following columns:</p><table class="table table"><tr><td><b>fish_samples</b></td><td><code>character</code></td><td>fish sample identifier</td></tr><tr><td><b>biomineral_archives</b></td><td><code>character</code></td><td>biomineral archives (vertebra and otolith)</td></tr><tr><td><b>biogeochemical_tags</b></td><td><code>character</code></td><td>biogeochemical tags</td></tr><tr><td><b>element_ratio</b></td><td><code>character</code></td><td>element ratio</td></tr><tr><td><b>section</b></td><td><code>character</code></td><td>biomineral archives of fish equally into sections</td></tr><tr><td><b>distance</b></td><td><code>numeric</code></td><td>distance from biomineral archives core to edge</td></tr><tr><td><b>mean_values</b></td><td><code>numeric</code></td><td>mean values (ug/mg in bulk elements; permil in isotopic ratios)</td></tr><tr><td><b>sd</b></td><td><code>numeric</code></td><td>standard deviation (ug/mg in bulk elements; permil in isotopic ratios)</td></tr></table></div>
     <div id="details">
     <h2>Details</h2>
     <p>Sulfur stable isotope ratios of vertebral sections of masu salmon. Each vertebral centrum was subdivided equally into 10 sections numbered from the center (01) to the margin (10). Fish samples were collected in the Churui River, Hokkaido Islands, japan. All fish samples analyzed consisted of bone collagen.</p>
 <p>Elemental and 87Sr/86Sr analyses of fish otolith sections from masu salmon (identified as OM-01, OM-02 and OM-03) collected from the Churui River.</p>
+<p>Instrument: TIMS (thermal ionization mass spectrometry);Q-ICP-MS (quadrupole inductively coupled plasma mass spectrometry); IRMS (isotope ratio mass spectrometer)</p>
+<p>Reference materials: NIST987 (National Institutes of Standards and Technology), XSTC-622 (SPEX SertiPrep, Metuchen, New Jersey, USA) and IAEA-S-1, IAEA-S-2 (International Atomic Energy Agency standards)</p>
     </div>
     <div id="source">
     <h2>Source</h2>
@@ -120,19 +122,19 @@
 <span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">bt.matsubayashi.2017</span></span></span>
 <span class="r-in"><span><span class="fu">tibble</span><span class="fu">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html" class="external-link">tibble</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 86 × 8</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    fish_samples biomineral_archives biogeochemical_tags element_ratio section    dista…¹ mean_…²    sd</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>               <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>               <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> OM-01        vertebra            isotopic ratios     d34S          Section-01       1    12.7  0.41</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> OM-01        vertebra            isotopic ratios     d34S          Section-02       2    13.9  0.41</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> OM-01        vertebra            isotopic ratios     d34S          Section-03       3    17.2  0.41</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> OM-01        vertebra            isotopic ratios     d34S          Section-04       4    15.5  0.41</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> OM-01        vertebra            isotopic ratios     d34S          Section-05       5    17.5  0.41</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> OM-01        vertebra            isotopic ratios     d34S          Section-06       6    18.1  0.41</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> OM-01        vertebra            isotopic ratios     d34S          Section-07       7    18.8  0.41</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> OM-01        vertebra            isotopic ratios     d34S          Section-08       8    18.9  0.41</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> OM-01        vertebra            isotopic ratios     d34S          Section-09       9    19    0.41</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> OM-01        vertebra            isotopic ratios     d34S          Section-10      10    18.9  0.41</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 76 more rows, and abbreviated variable names ¹​distance, ²​mean_values</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    fish_samples biomineral_archives biogeochemical_tags element_ratio section    distance mean_values    sd</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>               <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>               <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> OM-01        vertebra            isotopic ratios     d34S          Section-01        1        12.7  0.41</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> OM-01        vertebra            isotopic ratios     d34S          Section-02        2        13.9  0.41</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> OM-01        vertebra            isotopic ratios     d34S          Section-03        3        17.2  0.41</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> OM-01        vertebra            isotopic ratios     d34S          Section-04        4        15.5  0.41</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> OM-01        vertebra            isotopic ratios     d34S          Section-05        5        17.5  0.41</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> OM-01        vertebra            isotopic ratios     d34S          Section-06        6        18.1  0.41</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> OM-01        vertebra            isotopic ratios     d34S          Section-07        7        18.8  0.41</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> OM-01        vertebra            isotopic ratios     d34S          Section-08        8        18.9  0.41</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> OM-01        vertebra            isotopic ratios     d34S          Section-09        9        19    0.41</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> OM-01        vertebra            isotopic ratios     d34S          Section-10       10        18.9  0.41</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 76 more rows</span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span></span>
 <span class="r-in"><span></span></span>
@@ -213,7 +215,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 
